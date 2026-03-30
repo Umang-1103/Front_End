@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br/>
+    <form action="">
+        <div>
+            <label>Firstname :</label>
+            <input type="text" pattern="[A-Z][a-z]{3,10}" required>
+        </div>
+        <br/>
+        <div>
+            <label>Middlename :</label>
+            <input type="text" pattern="[A-Z][a-z]{3,10}" required>
+        </div>
+        <br/>
+        <div>
+            <label>Lastname :</label>
+            <input type="text" pattern="[A-Z][a-z]{3,10}" required>
+        </div>
+        <br/>
+        <div>
+            <label>Course :</label>
+            <select>
+                <option hidden value="">Course</option>
+                <option>M.sc(CA&IT)</option>
+                <option>MBA</option>
+            </select>
+        </div>
+        <br/>
+        <div>
+            <label>Gender :</label> <br/>
+            <input type="radio" name="Gender"> Male <br/>
+            <input type="radio" name="Gender"> Female <br/>
+            <input type="radio" name="Gender"> Other <br/>
+        </div>
+        <br/>
+        <div>
+            <label>Phone :</label>
+            +91 <input type="tel">
+        </div>
+        <br/>
+        <div>
+            <label>Address :</label> <br/>
+            <textarea rows="4"></textarea>
+        </div>
+        <br/>
+        <div>
+            <label>Email :</label>
+            <input type="email">
+        </div>
+        <br/>
+        <div>
+            <label>Password :</label>
+            <input type="password">
+        </div>
+        <br/>
+        <div>
+            <label>Re-type password :</label>
+            <input type="password">
+        </div>
+        <br/>
+        <input type="Submit">
+    </form>
+</body>
+</html>
