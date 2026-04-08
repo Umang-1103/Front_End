@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+</head>
+<body>
+
+    <h1>Audio</h1>
+    <audio width="500px" controls autoplay muted loop 
+    src="https://youtu.be/9MnGSJYyR8Q?list=PLKM3pENfZPOLCUSim2fut61AWCp9AUrQU"></audio>
+
+    <h1>Video</h1>
+    <video width="500px" height="250px" controls autoplay muted loop 
+    src="https://youtu.be/9MnGSJYyR8Q?list=PLKM3pENfZPOLCUSim2fut61AWCp9AUrQU"></video>
+
+    <h1>Canvas</h1>
+    <canvas id="canavs"></canvas>
+    <script>
+        var cnv=document.getElementById("canavs")
+        // console.log(cnv);
+        var big=cnv.getContext('2d')
+        big.fillStyle='blue';
+        // left,top,right,bottom
+        big.fillRect(0,0,150,100);
+        big.stroke();
+    </script>
+
+    <h1>SVG</h1>
+    <svg height="500px">
+        <circle cx="50" cy="50" r="45" stroke="black" fill="lightgray"/>
+    </svg>
+</body>
+</html>
