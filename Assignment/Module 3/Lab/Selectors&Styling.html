@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors & Styling</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        #form {
+            background-color: #f2f2f2;
+            width: 280px;
+            padding: 10px 50px;
+            margin: 20px auto;
+            font-weight: bolder;
+            border-radius: 6px;
+        }
+
+        label {
+            display: block;
+            padding: 10px 0;
+            font-size: larger;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px solid lightgray;
+        }
+
+        button {
+            margin: 10px 0;
+            padding: 10px 30px;
+            font-size: large;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <body>
+
+        <form action="" id="form">
+            <h2>Contact Form</h2>
+            <!-- Full Name -->
+            <div class="name">
+                <label for="name">Full Name :</label>
+                <input type="text" placeholder="Enter Your Full Name" minlength="4" maxlength="50" required>
+            </div>
+            <!-- Email -->
+            <div class="email">
+                <label for="email">Email :</label>
+                <input type="email" placeholder="Enter Your Email Address" required>
+            </div>
+            <!-- Phone Number -->
+            <div class="phone_number">
+                <label for="phone">Phone Number :</label>
+                <input type="tel" placeholder="Enter Your Phone Number" pattern="[6-9][0-9]{9}" maxlength="10" required>
+            </div>
+            <!-- Subject Dropdown -->
+            <div class="subject">
+                <label for="subject">Subject :</label>
+                <select required>
+                    <option hidden>Select The Subject</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                </select>
+            </div>
+            <!-- Message -->
+            <div class="message">
+                <label for="message">Message :</label>
+                <textarea rows="5" placeholder="Enter Your Message" minlength="10" maxlength="100" required></textarea>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+
+    </body>
+
+    </html>
+</body>
+
+</html>

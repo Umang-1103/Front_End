@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design with Media Queries</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Start */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: bisque;
+            color: black;
+        }
+    
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            padding: 0 10px;
+            color: black;
+            font-weight: bolder;
+        }
+
+        /* Navber End */
+
+        /* Container Start */
+        .container {
+            background-color: lavender;
+            display: flex;
+            padding: 10px 30px;
+        }
+
+        .content-1 {
+            background-color: antiquewhite;
+            width: 40%;
+            padding: 20px;
+        }
+
+        .content-2 {
+            background-color: beige;
+            width: 60%;
+            padding: 15px;
+        }
+
+        /* Container End */
+
+        /* Footer Start */
+        footer {
+            background-color: lightgreen;
+            padding: 10px 30px;
+            text-align: center;
+        }
+
+        /* Footer End */
+
+        /* Responsive Start */
+        @media only screen and (max-width:768px) {
+            .navbar {
+                display: block;
+                flex-direction: column;
+            }
+    
+            .navbar ul li {
+                display: flex;
+                flex-direction: column;
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            .container {
+                display: block;
+            }
+
+            .content-1 {
+                width: auto;
+            }
+
+            .content-2 {
+                width: auto;
+            }
+        }
+
+        /* Responsive End */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>My Website</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+    </nav>
+    <div class="container">
+        <div class="content-1">
+            <h1>First Content</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias placeat ex adipisci, non ab
+                reprehenderit quaerat saepe hic libero aliquam minus minima dolorem natus, excepturi maiores recusandae
+                quod omnis optio!</p>
+        </div>
+        <div class="content-2">
+            <h1>Second Content</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias placeat ex adipisci, non ab
+                reprehenderit quaerat saepe hic libero aliquam minus minima dolorem natus, excepturi maiores recusandae
+                quod omnis optio!</p>
+        </div>
+    </div>
+    <footer>
+        <h2>© 2026 My Website</h2>
+    </footer>
+</body>
+
+</html>

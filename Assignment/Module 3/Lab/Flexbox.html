@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox </title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            padding: 10px 0;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+        .sidebar{
+            background-color: azure;
+            width: 20%;
+            text-align: center;
+            padding: 100px 0;
+            font-size: 20px;
+        }
+        .center{
+            background-color: beige;
+            width: 80%;
+            text-align: center;
+            padding: 80px 0;
+            font-size: 32px;
+        }
+        footer{
+            background-color: lightgreen;
+            text-align: center;
+            padding: 10px 0;
+        }
+        @media only screen and (max-width:768px) {
+            .sidebar{
+                font-size: 16px;
+            }
+            .center{
+                font-size: 20px;
+            }
+        }
+        @media only screen and (max-width:576px) {
+            .sidebar{
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <div class="main">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+        </div>
+        <div class="center">
+            <h3>Main Content in Center</h3>
+        </div>
+    </div>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>

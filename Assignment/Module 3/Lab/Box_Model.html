@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        body{
+            background-color: lightgoldenrodyellow;
+        }
+        .card {
+            box-sizing: border-box;
+            width: 300px;
+            text-align: center;
+            margin: 0 auto;
+            background-color: lightyellow;
+            padding: 10px 20px;
+            border: 4px solid yellowgreen;
+            border-radius: 8px;
+        }
+
+        img {
+            box-sizing: content-box;
+            border-radius: 50%;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h5 {
+            text-align: center;
+            border: 2px solid grey;
+            padding: 4px;
+        }
+
+        button {
+            font-size: 20px;
+            margin: 10px 0;
+            padding: 10px 30px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="./Images/team1.png" width="100%" height="100%" alt="">
+        <h1>John Doe</h1>
+        <h5>Software developer with a strong interest in front-end design and building responsive web applications.</h5>
+        <button>Follow</button>
+    </div>
+</body>
+
+</html>

@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Form</title>
 </head>
+
 <body>
 
     <h2>Contact Form</h2>
 
     <form action="">
         <!-- Full Name -->
-        <label for="name">Full Name :</label>
-        <input type="text" placeholder="Enter Your Full Name" minlength="4" maxlength="50" required>
-        <br><br>
+        <div class="name">
+            <label for="name">Full Name :</label>
+            <input type="text" placeholder="Enter Your Full Name" minlength="4" maxlength="50" required>
+        </div>
+        <br>
         <!-- Email -->
-        <label for="email">Email :</label>
-        <input type="email" placeholder="Enter Your Email Address" required>
-        <br><br>
+        <div class="email">
+            <label for="email">Email :</label>
+            <input type="email" placeholder="Enter Your Email Address" required>
+        </div>
+        <br>
         <!-- Phone Number -->
-        <label for="phone">Phone Number :</label>
-        <input type="tel" placeholder="Enter Your Phone Number" pattern="[6-9][0-9]{9}" maxlength="10" required>
-        <br><br>
+        <div class="phone_number">
+            <label for="phone">Phone Number :</label>
+            <input type="tel" placeholder="Enter Your Phone Number" pattern="[6-9][0-9]{9}" maxlength="10" required>
+        </div>
+        <br>
         <!-- Subject Dropdown -->
-        <label for="subject">Subject :</label>
-        <select required>
-            <option hidden>Select The Subject</option>
-            <option>A</option>
-            <option>B</option>
-            <option>C</option>
-            <option>D</option>
-        </select>
-        <br><br>
+        <div class="subject">
+            <label for="subject">Subject :</label>
+            <select required>
+                <option hidden>Select The Subject</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+            </select>
+        </div>
+        <br>
         <!-- Message -->
-        <label for="message">Message :</label>
-        <textarea rows="5" placeholder="Enter Your Message" minlength="10" maxlength="100" required></textarea>
-        <br><br>
+        <div class="message">
+            <label for="message">Message :</label>
+            <textarea rows="5" placeholder="Enter Your Message" minlength="10" maxlength="100" required></textarea>
+        </div>
+        <br>
         <!-- Submit Button -->
         <button type="submit">Submit</button>
     </form>
 
 </body>
+
 </html>
