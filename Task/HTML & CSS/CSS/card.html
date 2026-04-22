@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .box {
+            width: 250px;
+            /* border: 2px solid; */
+            text-align: center;
+            overflow: hidden;
+            box-shadow: 0 0 10px lightgray;
+            position: relative;
+        }
+        .new{
+            position: absolute;
+            display: inline-block;
+            background-color: red;
+            color: white;
+            padding: 4px;
+            right: 0;
+        }
+        .img-box {
+            position: relative;
+            padding: 30px 10px 10px;
+            /* transition: .4s; */
+        }
+
+        .click-view {
+            position: absolute;
+            left: 0;
+            top: -100%;
+            font-size: larger;
+            padding: 8px;
+            background-color: black;
+            width: 235px;
+            color: white;
+            transition: .4s;
+        }
+
+        .click-view:hover {
+            background-color: rgb(23, 172, 122);
+        }
+
+        img{
+            width: 210px;
+            transition: .5s;
+        }
+
+        .img-box:hover img{
+            transform: rotateY(180deg);
+        }
+        .img-box:hover{
+            background-color: #d3d3d30f;
+        }
+        .img-box:hover .click-view {
+            top: calc(100% - 56px);
+        }
+        
+        h3 {
+            font-size: medium;
+            color: red;
+        }
+        .add{
+            display: block;
+            background-color: rgb(23, 172, 122);
+            color: white;
+            font-size: larger;
+            padding: 5px;
+            margin: 20px;
+            position: relative;
+        }
+        .add::before{
+            content: "";
+            outline: 2px solid rgb(23, 172, 122);
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            transition: .4s;
+        }
+        .add:hover::before{
+            outline-offset:  5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="box">
+            <span class="new">New</span>
+            <div class="img-box">
+                <img src="./C1.jpg">
+                <a class="click-view">QUICK VIEW</a>
+            </div>
+            <h3>Formal Blue Shirt</h3>
+            <span>$45.99</span>&nbsp;&nbsp;
+            <span><s> $69.71</s></span>
+            <a class="add">ADD TO CART</a>
+        </div>
+        
+        <div class="box">
+            <span class="new">New</span>
+            <div class="img-box">
+                <img src="./C1.jpg">
+                <a class="click-view">QUICK VIEW</a>
+            </div>
+            <h3>Formal Blue Shirt</h3>
+            <span>$45.99</span>&nbsp;&nbsp;
+            <span><s> $69.71</s></span>
+            <a class="add">ADD TO CART</a>
+        </div>
+
+        <div class="box">
+            <span class="new">New</span>
+            <div class="img-box">
+                <img src="./C1.jpg">
+                <a class="click-view">QUICK VIEW</a>
+            </div>
+            <h3>Formal Blue Shirt</h3>
+            <span>$45.99</span>&nbsp;&nbsp;
+            <span><s> $69.71</s></span>
+            <a class="add">ADD TO CART</a>
+        </div>
+
+        <div class="box">
+            <span class="new">New</span>
+            <div class="img-box">
+                <img src="./C1.jpg">
+                <a class="click-view">QUICK VIEW</a>
+            </div>
+            <h3>Formal Blue Shirt</h3>
+            <span>$45.99</span>&nbsp;&nbsp;
+            <span><s> $69.71</s></span>
+            <a class="add">ADD TO CART</a>
+        </div>
+
+        <div class="box">
+            <span class="new">New</span>
+            <div class="img-box">
+                <img src="./C1.jpg">
+                <a class="click-view">QUICK VIEW</a>
+            </div>
+            <h3>Formal Blue Shirt</h3>
+            <span>$45.99</span>&nbsp;&nbsp;
+            <span><s> $69.71</s></span>
+            <a class="add">ADD TO CART</a>
+        </div>
+
+        <div class="box">
+            <span class="new">New</span>
+            <div class="img-box">
+                <img src="./C1.jpg">
+                <a class="click-view">QUICK VIEW</a>
+            </div>
+            <h3>Formal Blue Shirt</h3>
+            <span>$45.99</span>&nbsp;&nbsp;
+            <span><s> $69.71</s></span>
+            <a class="add">ADD TO CART</a>
+        </div>
+
+        <div class="box">
+            <span class="new">New</span>
+            <div class="img-box">
+                <img src="./C1.jpg">
+                <a class="click-view">QUICK VIEW</a>
+            </div>
+            <h3>Formal Blue Shirt</h3>
+            <span>$45.99</span>&nbsp;&nbsp;
+            <span><s> $69.71</s></span>
+            <a class="add">ADD TO CART</a>
+        </div>
+
+        <div class="box">
+            <span class="new">New</span>
+            <div class="img-box">
+                <img src="./C1.jpg">
+                <a class="click-view">QUICK VIEW</a>
+            </div>
+            <h3>Formal Blue Shirt</h3>
+            <span>$45.99</span>&nbsp;&nbsp;
+            <span><s> $69.71</s></span>
+            <a class="add">ADD TO CART</a>
+        </div>
+
+    </div>
+</body>
+
+</html>

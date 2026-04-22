@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* ul1 */
+        #ul1 li{
+            display: inline-block;
+            background-color: aquamarine;
+            padding: 20px 30px;
+            position: relative;
+        }
+        #ul1 li a{
+            text-decoration: none;
+            color: blue;
+            font-size: larger;
+        }
+        #ul1 li::before{
+            content: "";
+            height: 8px;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: .8s;
+            transform: scale(0);
+        }
+        #ul1 li:hover::after{
+            width: 100%;
+            transform: scale(1);
+        }
+
+        /* ul2 */
+        #ul2 li{
+            display: inline-block;
+            background-color: aquamarine;
+            padding: 20px 30px;
+            position: relative;
+        }
+        #ul2 li a{
+            text-decoration: none;
+            color: blue;
+            font-size: larger;
+        }
+        #ul2 li::before{
+            content: "";
+            height: 8px;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: .8s;
+            transform: scaleX(0);
+        }
+        #ul2 li:hover::before{
+            width: 100%;
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <ul id="ul1">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Help</a></li>
+    </ul>
+
+    <ul id="ul2">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Help</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 200px;
+            width: 200px;
+            /* overflow: hidden; */
+        }
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        .content{
+            /* height: 200px;
+            width: 200px; */
+            padding: 22px 30px;
+            color: white;
+            background-color: rgba(242, 131, 131, 0.4);
+            transform: translate(0px,-200px) scale(0); 
+            transition: .37s;
+        }
+        .main:hover .content{
+            transform: translate(0%,-102%) scale(1);
+            transition: .3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="./s2.jpg" class="img">
+        <div class="content">
+            <h2>Repair</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, consectetur.</p>
+        </div>
+    </div>
+</body>
+</html>

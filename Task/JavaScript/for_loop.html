@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // for(let i=1;i<=5;i++){
+        //     console.log(i);
+        // }
+
+        document.write("Pattern - 1<br><br>")
+        for (let r = 1; r <= 5; r++) {
+            for (let c = 1; c <= r; c++) {
+                document.write("* ")
+            }
+            document.write("<br>")
+        }
+        document.write("<br><br>")
+
+        document.write("Pattern - 2<br><br>")
+        for (let r = 5; r >= 1; r--) {
+            for (let c = 1; c <= r; c++) {
+                document.write("* ")
+            }
+            document.write("<br>")
+        }
+        document.write("<br><br>")
+
+        document.write("Pattern - 3<br><br>")
+        for (let r = 1; r <= 5; r++) {
+            for (let s = 5; s >= r; s--) {
+                document.write("&nbsp;&nbsp;&nbsp;")
+            }
+            for (let c = 1; c <= r; c++) {
+                document.write("* ")
+            }
+            document.write("<br>")
+        }
+        document.write("<br><br>")
+
+        document.write("Pattern - 4<br><br>")
+        for (let r = 5; r >= 1; r--) {
+            for (let s = 1; s <= (5 - r); s++) {
+                document.write("&nbsp;&nbsp;&nbsp;")
+            }
+            for (let c = 1; c <= r; c++) {
+                document.write("* ")
+            }
+            document.write("<br>")
+        }
+        document.write("<br><br>")
+
+        document.write("Pattern - 5<br><br>")
+        for (let r = 1; r <= 5; r++) {
+            for (let c = 1; c <= r; c++) {
+                document.write(r)
+            }
+            document.write("<br>")
+        }
+        document.write("<br><br>")
+
+        document.write("Pattern - 6<br><br>")
+        for (let r = 5; r >= 1; r--) {
+            for (let c = 1; c <= r; c++) {
+                document.write(r)
+            }
+            document.write("<br>")
+        }
+        document.write("<br><br>")
+
+        document.write("Pattern - 7<br><br>")
+        for (let r = 1; r <= 5; r++) {
+            for (let s = 5; s >= r; s--) {
+                document.write("&nbsp;")
+            }
+            for (let c = 1; c <= r; c++) {
+                document.write(r)
+            }
+            document.write("<br>")
+        }
+        document.write("<br><br>")
+
+        document.write("Pattern - 8<br><br>")
+        for (let r = 1; r <= 5; r++) {
+            for (let s = 5; s >= r; s--) {
+                document.write("&nbsp;")
+            }
+            for (let c = 1; c <= r; c++) {
+                document.write(c)
+            }
+            document.write("<br>")
+        }
+        document.write("<br><br>")
+
+        document.write("Pattern - 9<br><br>")
+        for (let r = 1; r <= 5; r++) {
+            document.write(r);
+            for (let c = 1; c <= r; c++) {
+                document.write(c);
+            }
+            document.write("<br>")
+        }
+        document.write("<br><br>")
+
+        document.write("Pattern - 10<br><br>")
+        let n=0;
+        for(r=1;r<=4;r++){
+            for(c=1;c<=r;c++){
+                document.write(n)
+                n++;
+            }
+            document.write("<br>")
+        }
+        document.write("<br><br>")
+
+        
+
+    </script>
+
+</body>
+
+</html>
