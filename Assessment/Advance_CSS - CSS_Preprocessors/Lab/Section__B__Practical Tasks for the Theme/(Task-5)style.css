@@ -1,0 +1,154 @@
+body {
+    background-color: beige;
+}
+
+.profile {
+    margin: 0px auto;
+    background-color: #b68e76;
+    color: #ffffff;
+    text-align: center;
+    width: 60%;
+    padding: 20px 10px;
+}
+
+.profile img {
+    width: 12%;
+    border: none;
+    border-radius: 50%;
+}
+
+.profile p {
+    width: 62%;
+    margin: 0 auto;
+}
+
+.profile ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.profile ul li a {
+    text-decoration: none;
+    color: black;
+    background-color: antiquewhite;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: clamp(8px, 4vw, 15px);
+}
+
+.developer {
+    background-color: #ffffff;
+    margin: 0px auto;
+    width: 60%;
+    padding: 20px 10px;
+}
+
+.developer h1 {
+    margin: 0 0 0 22px;
+}
+
+.developer p {
+    width: 90%;
+    margin: 0;
+}
+
+footer {
+    margin: 0px auto;
+    background-color: #b68e76;
+    color: #ffffff;
+    width: 60%;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: clamp(14px, 6vw, 20px);
+    font-weight: bold;
+    margin: 2px;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    background-color: antiquewhite;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: clamp(8px, 4vw, 15px);
+}
+
+@media only screen and (max-width:992px) {
+    .profile img {
+        width: 30%;
+        border: none;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .profile {
+        width: 70%;
+    }
+
+    .profile p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .profile ul li a {
+        padding: 6px 10px;
+    }
+
+    .developer {
+        width: 70%;
+    }
+
+    footer {
+        width: 70%;
+    }
+
+    footer ul li a {
+        padding: 6px 10px;
+    }
+
+}
+
+@media only screen and (max-width:576px) {
+    .profile {
+        width: 90%;
+    }
+
+    .profile p {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .profile ul li {
+        margin: 1px;
+    }
+
+    .profile ul li a {
+        padding: 4px 8px;
+    }
+
+    .developer {
+        width: 90%;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    footer ul li {
+        margin: 1px;
+    }
+
+    footer ul li a {
+        padding: 4px 8px;
+    }
+}

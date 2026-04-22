@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sub1=40;
+        let sub2=36;
+        let sub3=36;
+        let total,percentage;
+        total=sub1+sub2+sub3;
+        percentage=(total/300)*100;
+        console.log("Percentage :- ",percentage)
+
+        if(sub1<=35)
+        {
+            console.log("You are failed in subject1")
+            console.log("Sub1 :- ",sub1);
+            if(sub2<=35)
+            {
+                console.log("You are failed in subject2")
+                console.log("Sub2 :- ",sub2);
+            }
+            else(sub3<=35)
+            {
+                console.log("You are failed in subject3")
+                console.log("Sub3 :- ",sub3);
+            }
+        }
+        else
+        {
+            console.log("You are failed in subject2")
+            console.log("Sub2 :- ",sub2);
+            if(sub3<=35)
+            {
+                console.log("You are failed in subject3")
+                console.log("Sub3 :- ",sub3);
+            }
+        }
+        //if(sub1<=35){
+        //console.log("You are failed in subject1")
+        //console.log("Sub1 :- ",sub1);
+        //}
+        // else if(sub2<=35){
+        //     console.log("You are failed in subject2")
+        //     console.log("Sub2 :- ",sub2);
+        // }
+        // else if(sub3<=35){
+        //     console.log("You are failed in subject3")
+        //     console.log("Sub3 :- ",sub3);
+        // }
+        // else{
+        //     total=sub1+sub2+sub2;
+        //     percentage=total/3;
+        //     console.log("Percentage :- ",percentage)
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona | Contact</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="logo">Contact</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h1>Get in Touch</h1>
+
+        <form action="" id="form">
+            <!-- Name -->
+            <div class="name">
+                <label for="name">Name :</label>
+                <input type="text" minlength="4" maxlength="16" required>
+            </div>
+            <!-- Email -->
+            <div class="email">
+                <label for="email">Email :</label>
+                <input type="email" required>
+            </div>
+            <!-- Phone Number -->
+            <div class="phone_number">
+                <label for="phone">Phone Number :</label>
+                <input type="tel" pattern="[6-9][0-9]{9}" maxlength="10" required>
+            </div>
+            <!-- Message -->
+            <div class="message">
+                <label for="message">Message :</label>
+                <textarea rows="5" minlength="10" maxlength="100" required></textarea>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>    
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Persona</p>
+    </footer>
+    
+</body>
+</html>
