@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Using Value</h1>
+    <textarea id="t1"></textarea>
+    <br>
+    <textarea id="t2"></textarea>
+    <br>
+    <button onclick="exchange()">Click Me!</button>
+
+    <h1>Using innerHTML</h1>
+    <h2 id="te1"></h2>
+    <h3 id="te2"></h3>
+    <br>
+    <button onclick="exchang()">Click Me!</button>
+    
+    <!-- <h1>Using class</h1>
+    <input type="text" class="inp1">
+    <br>
+    <input type="text" class="inp2">
+    <br>
+    <button onclick="change()">Click Me!</button> -->
+
+
+    <script>
+        let text1 = document.getElementById("t1")
+        let text2 = document.getElementById("t2")
+
+        function exchange(){
+            text2.innerHTML = text1.value
+        }
+
+        let tex1 = document.getElementById("te1")
+        let tex2 = document.getElementById("te2")
+        tex1.innerHTML = "Hello!"
+
+        function exchang(){
+            tex2.innerHTML = tex1.innerHTML
+        }
+ 
+        // let i1 = document.getElementsByClassName("inp1")
+        // let i2 = document.getElementsByClassName("inp2")
+
+        // function change(){
+        //     i2[0].value = i1[0].value
+        // }
+    </script>
+
+</body>
+</html>

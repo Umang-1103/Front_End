@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container {
+            width: 40%;
+            margin: 34px auto;
+            background-color: darkslategray;
+            padding: 20px;
+        }
+        input {
+            width: 97%;
+            padding: 20px 0px 20px 0px;
+            border: none;
+            font-size: 30px;
+            margin-bottom: 10px;
+            background-color: whitesmoke;
+        }
+        .content{
+            display: flex;
+        }
+        .number{
+            width: 60%;
+        }
+        .num{
+            width: 28%;
+            margin: 5px;
+            padding: 10px;
+            font-size: 22px;
+        }
+        .zero{
+            width: 93%;
+            margin: 5px;
+            padding: 10px;
+            font-size: 22px;
+        }
+        .symbol{
+            width: 40%;
+        }
+        .sym{
+            width: 40%;
+            margin: 5px;
+            padding: 10px;
+            font-size: 22px;
+        }
+        .clear{
+            width: 87%;
+            margin: 5px;
+            padding: 10px;
+            font-size: 22px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <input type="text" id="h1">
+
+        <div class="content">
+            <div class="number">
+                <button onclick="numbervalue(1)" class="num">1</button>
+                <button onclick="numbervalue(2)" class="num">2</button>
+                <button onclick="numbervalue(3)" class="num">3</button>
+                <button onclick="numbervalue(4)" class="num">4</button>
+                <button onclick="numbervalue(5)" class="num">5</button>
+                <button onclick="numbervalue(6)" class="num">6</button>
+                <button onclick="numbervalue(7)" class="num">7</button>
+                <button onclick="numbervalue(8)" class="num">8</button>
+                <button onclick="numbervalue(9)" class="num">9</button>
+                <button onclick="numbervalue(0)" class="zero">0</button>
+            </div>
+
+            <div class="symbol">
+                <button onclick="numbervalue('+')" class="sym">+</button>
+                <button onclick="numbervalue('-')" class="sym">-</button>
+                <button onclick="numbervalue('*')" class="sym">*</button>
+                <button onclick="numbervalue('/')" class="sym">/</button>
+                <button onclick="numbervalue('%')" class="sym">%</button>
+
+                <button onclick="calculate()" class="sym">=</button>
+
+                <button onclick="cleardisplay()" class="clear">C</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        function numbervalue(v) {
+            document.getElementById("h1").value += v
+        }
+
+        function calculate() {
+            document.getElementById("h1").value = eval(document.getElementById("h1").value)
+        }
+
+        function cleardisplay() {
+            document.getElementById("h1").value = ""
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .H1{
+            background-color: aqua;
+            padding: 50px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1" class="H2">Hello!</h1>
+    <button onclick="add()">Add Through JS</button>
+    <button onclick="add2()">ADD2 Through JS</button>
+    <br><br>
+    <button onclick="add3()">Add CSS Class</button>
+    <button onclick="remove()">Remove CSS Class </button>
+    <button onclick="toggle()">Toggle CSS class </button>
+    
+</body>
+
+<script>
+    let h1 = document.getElementById("h1")
+
+    function add(){
+        h1.style.backgroundColor = "blue"
+        h1.style.color = "green"
+        h1.style.padding = "10px"
+    }
+    function add2(){
+        h1.innerHTML = "Hello JavaScript"
+        h1.style.backgroundColor = "yellow"
+        h1.style.color = "green"
+        h1.style.padding = "100px"
+    }
+
+    function add3(){
+        h1.classList = "H1"
+    }
+    function remove(){
+        h1.classList.remove("H1")
+    }
+    function toggle(){
+        h1.classList.toggle("H1")
+    }
+
+    
+
+</script>
+</html>
