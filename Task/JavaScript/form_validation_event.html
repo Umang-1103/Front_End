@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+
+<body>
+
+    <form action="" onsubmit="return validation()">
+
+        <div>
+            <label for="">First Name : </label>
+            <input type="text" id="fname" placeholder="Enter Your First Name">
+            <span id="fname-error"></span>
+        </div>
+        <br>
+        <div>
+            <label for="">Last Name : </label>
+            <input type="text" id="lname" placeholder="Enter Your Last Name">
+            <span id="lname-error"></span>
+        </div>
+        <br>
+        <div>
+            <label for="">Phone Number : </label>
+            <input type="tel" id="pnumber" placeholder="Enter Your Phone Number">
+            <span id="pnumber-error"></span>
+        </div>
+        <br>
+        <div>
+            <label for="">E-mail : </label>
+            <input type="email" id="email" placeholder="Enter Your E-mail">
+            <span id="email-error"></span>
+        </div>
+        <br>
+        <div>
+            <label for="">Password : </label>
+            <input type="password" id="password" placeholder="Enter Your Password">
+            <span id="password-error"></span>
+        </div>
+        <br>
+        <div>
+            <label for="">Confirm Password : </label>
+            <input type="password" id="cfpassword" placeholder="Enter Your Confirm Password" size="24">
+            <span id="cfpassword-error"></span>
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+
+
+    <script>
+
+        function validation() {
+
+            let fname = document.getElementById("fname").value;
+            let fname_error = document.getElementById("fname-error");
+
+            let lname = document.getElementById("lname").value;
+            let lname_error = document.getElementById("lname-error");
+
+            let pnumber = document.getElementById("pnumber").value;
+            let pnumber_error = document.getElementById("pnumber-error");
+
+            let email = document.getElementById("email").value;
+            let email_error = document.getElementById("email-error");
+
+            let password = document.getElementById("password").value;
+            let password_error = document.getElementById("password-error");
+
+            let cfpassword = document.getElementById("cfpassword").value;
+            let cfpassword_error = document.getElementById("cfpassword-error");
+
+
+            if (fname == "" || fname == null) {
+                fname_error.innerHTML = "**Please Enter Your First Name"
+                fname_error.style.color = "red"
+                return false
+            }
+            else {
+                fname_error.innerHTML = ""
+            }
+
+            if (lname == "" || lname == null) {
+                lname_error.innerHTML = "**Please Enter Your Last Name"
+                lname_error.style.color = "red"
+                return false
+            }
+            else {
+                lname_error.innerHTML = ""
+            }
+
+            if (pnumber == "" || pnumber == null) {
+                pnumber_error.innerHTML = "**Please Enter Your Phone Number"
+                pnumber_error.style.color = "red"
+                return false
+            }
+            else {
+                pnumber_error.innerHTML = ""
+            }
+
+            if (email == "" || email == null) {
+                email_error.innerHTML = "**Please Enter Your E-mail"
+                email_error.style.color = "red"
+                return false
+            }
+            else {
+                email_error.innerHTML = ""
+            }
+
+            if (password == "" || password == null) {
+                password_error.innerHTML = "**Please Enter Your Password"
+                password_error.style.color = "red"
+                return false
+            }
+            else {
+                password_error.innerHTML = ""
+            }
+
+            if (cfpassword == "" || cfpassword == null) {
+                cfpassword_error.innerHTML = "**Please Enter Your Password"
+                cfpassword_error.style.color = "red"
+                return false
+            }
+            else if (password != cfpassword) {
+                cfpassword_error.innerHTML = "**Password & Confirm Password Must be match...."
+                cfpassword_error.style.color = "red"
+                return false
+            }
+            else {
+                cfpassword_error.innerHTML = ""
+            }
+
+            
+
+        }
+
+    </script>
+
+</body>
+
+</html>

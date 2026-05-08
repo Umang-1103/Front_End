@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        .main {
+            width: 30%;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <img src="./Images/C1.jpg" height="100%" width="100%" class="img" alt="">
+        <img src="./Images/C2.jpg" height="100%" width="100%" class="img" alt="">
+        <img src="./Images/C3.jpg" height="100%" width="100%" class="img" alt="">
+        <img src="./Images/C4.jpg" height="100%" width="100%" class="img" alt="">
+        <img src="./Images/C5.jpg" height="100%" width="100%" class="img" alt="">
+        <img src="./Images/C6.jpg" height="100%" width="100%" class="img" alt="">
+        <img src="./Images/C7.jpg" height="100%" width="100%" class="img" alt="">
+        <img src="./Images/C8.jpg" height="100%" width="100%" class="img" alt="">
+    </div>
+
+    <script>
+
+        let image = document.getElementsByClassName("img")
+        let index = 0
+        // console.log(image)
+
+        function slider(){
+            for (let i = 0; i < image.length; i++) {
+                // console.log(image[i]);
+                image[i].style.display = "none"
+            }
+
+            image[index].style.display = "block"
+            index++
+
+            if (index == image.length) {
+                index = 0
+            }
+
+            setTimeout(slider, 1000)
+
+        }
+
+        slider()
+
+
+
+    </script>
+
+</body>
+
+</html>

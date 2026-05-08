@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation With Arguments</title>
+</head>
+
+<body>
+
+    <form action="">
+
+        <div>
+            <label for="">First Name : </label>
+            <input type="text" id="fname" onblur="return validation(fname, fname_error)"
+                placeholder="Enter Your First Name">
+            <span id="fname_error"></span>
+        </div>
+        <br>
+        <div>
+            <label for="">Last Name : </label>
+            <input type="text" id="lname" onblur="return validation(lname, lname_error)"
+                placeholder="Enter Your Last Name">
+            <span id="lname_error"></span>
+        </div>
+        <br>
+        <div>
+            <label for="">Phone Number : </label>
+            <input type="tel" id="pnumber" onblur="return validation(pnumber, pnumber_error)"
+                placeholder="Enter Your Phone Number">
+            <span id="pnumber_error"></span>
+        </div>
+        <br>
+        <div>
+            <label for="">E-mail : </label>
+            <input type="email" id="email" onblur="return validation(email, email_error)"
+                placeholder="Enter Your E-mail">
+            <span id="email_error"></span>
+        </div>
+        <br>
+        <div>
+            <label for="">Password : </label>
+            <input type="password" id="password" onblur="return validation(password, password_error)"
+                placeholder="Enter Your Password">
+            <span id="password_error"></span>
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+
+    <script>
+
+        function validation(input, error) {
+            if (input.value == "" || input.value == null) {
+                error.innerHTML = "**Please Enter Data"
+                error.style.color = "red"
+                return false
+            }
+            else {
+                error.innerHTML = ""
+            }
+        }
+
+        // function validateForm() {
+        //     let isValid = true;
+
+        //     let fname = document.getElementById("fname");
+        //     let lname = document.getElementById("lname");
+        //     let pnumber = document.getElementById("pnumber");
+        //     let email = document.getElementById("email");
+        //     let password = document.getElementById("password");
+
+        //     let fname_error = document.getElementById("fname_error");
+        //     let lname_error = document.getElementById("lname_error");
+        //     let pnumber_error = document.getElementById("pnumber_error");
+        //     let email_error = document.getElementById("email_error");
+        //     let password_error = document.getElementById("password_error");
+
+        //     isValid = validation(fname, fname_error) && isValid;
+        //     isValid = validation(lname, lname_error) && isValid;
+        //     isValid = validation(pnumber, pnumber_error) && isValid;
+        //     isValid = validation(email, email_error) && isValid;
+        //     isValid = validation(password, password_error) && isValid;
+
+        //     return isValid; //  stops submit if false
+        // }
+
+    </script>
+
+</body>
+
+</html>

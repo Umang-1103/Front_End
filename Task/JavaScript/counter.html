@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    
+    <h1 id="h1"></h1>
+    
+    <h1 id="h2">ABC</h1>
+
+    <script>
+        let i=0
+        let count=setInterval(counter, 10)
+        function counter(){
+            document.getElementById("h1").innerHTML = "Counter :- "+ ++i
+
+            if(i==300){
+                clearInterval(count)
+            }
+
+        }
+
+        setTimeout(function(){
+            document.getElementById("h2").innerHTML = "Hello setTimeout"
+        }, 3000)
+        
+    </script>
+
+</body>
+</html>
