@@ -1,0 +1,91 @@
+<!-- 3. Contact Form with Validation: Create a professional <form>. Utilize 
+    framework-specific classes to style inputs and implement basic validation 
+    (like required attributes) to ensure the user provides a valid email and message. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form with Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section class="container py-5">
+        <div class="card border-2 border-dark rounded-5">
+            <div class="card-body p-5">
+                <form action="" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationCustom01" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="validationCustom01"
+                            placeholder="Enter Your Full Name" required>
+                        <div class="invalid-feedback">
+                            Please enter your full name!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationCustom02" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="validationCustom02"
+                            placeholder="Enter Your E-mail Address" required>
+                        <div class="invalid-feedback">
+                            Please enter your e-mail address!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationCustom03" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="validationCustom03"
+                            placeholder="Enter Your Phone Number" required>
+                        <div class="invalid-feedback">
+                            Please enter your phone number!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationCustom04" class="form-label">Message</label>
+                        <textarea class="form-control" id="validationCustom04" rows="3"
+                            placeholder="Enter Your Message Here...." required></textarea>
+                        <div class="invalid-feedback">
+                            Please enter your message!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        (() => {
+            'use strict'
+
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+
+</body>
+
+</html>

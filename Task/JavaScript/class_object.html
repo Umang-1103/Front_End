@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let BankBalance = 0
+        class Bank{
+            Detail = function BankDetails(pin,balance){
+                let BankName = "SBI"
+                let BankIFSC = "SBI160589"
+                let BankPin = pin
+                BankBalance = balance
+
+                console.log("Bank Name :- ",BankName)
+                console.log("Bank IFSC Code :- ",BankIFSC)
+                console.log("Bank Pin Number :- ",BankPin)
+                console.log("Bank Balance :- ",BankBalance)
+            }
+            
+            Deposit = function BankDeposit(deposit){
+                let BankDeposit = deposit
+                BankBalance = BankBalance + BankDeposit
+                console.log("Deposit :- ",BankDeposit)
+                // console.log("Bank Balance :- ",BankBalance)
+            }
+
+            Withdraw = function BankWithdraw(withdraw){
+                let BankWithdraw = withdraw
+                BankBalance = BankBalance - BankWithdraw
+                console.log("Withdraw :- ",BankWithdraw)
+                // console.log("Bank Balance :- ",BankBalance)
+            }
+
+            ShowBalance = function ShowBankBalance(){
+                console.log("Bank Balance :- ",BankBalance)
+            }
+        }
+
+        const P1 = new Bank
+        console.log("Person 1")
+        P1.Detail(2365,25000)
+        P1.Deposit(2500)
+        P1.Withdraw(1000)
+        P1.ShowBalance()
+
+        console.log("Person 2")
+        P1.Detail(6523,20000)
+        P1.Deposit(200)
+        P1.Withdraw(30000)
+        P1.ShowBalance()
+
+    </script>
+
+</body>
+</html>
