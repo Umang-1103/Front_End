@@ -1,0 +1,43 @@
+
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "user1",
+            "course": "Front-end",
+            "age": 23
+        },
+        {
+            "id": 2,
+            "name": "user2",
+            "course": "Back-end",
+            "age": 25
+        },
+        {
+            "id": 3,
+            "name": "user3",
+            "course": "Full-stack",
+            "age": 26
+        },
+        {
+            "id": 4,
+            "name": "user4",
+            "course": "hardware",
+            "age": 22
+        }
+    ],
+    "admin":[
+        {
+            "id":1,
+            "name":"admin1",
+            "email":"admin1@gmail.com"
+        },
+        {
+            "id":2,
+            "name":"admin2",
+            "email":"admin2@gmail.com"
+        }
+    ]
+}
+
+

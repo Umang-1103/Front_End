@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+
+    <table class="table text-center">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Username</th>
+                <th>E-mail</th>
+                <th colspan="3">
+                    Address
+                    <table class="table text-center mb-0">
+                        <thead>
+                            <tr>
+                                <th>City</th>
+                                <th>Street</th>
+                                <th>Zipcode</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </th>
+            </tr>
+
+        </thead>
+        <tbody>
+    
+        </tbody>
+    </table>
+
+    <script>
+
+        fetch("https://fakestoreapi.com/users", {
+            method: "GET"
+        })
+            .then((res) => {
+                return res.json()
+            })
+            .then((user_data) => {
+                console.log(user_data)
+                user_data.forEach((data) => {
+                    console.log(data)
+
+                    let tbody = document.querySelector("tbody")
+                    let trow = tbody.insertRow()
+
+                    let id = trow.insertCell(0)
+                    let firstname = trow.insertCell(1)
+                    let lastname = trow.insertCell(2)
+                    let username = trow.insertCell(3)
+                    let email = trow.insertCell(4)
+                    let city = trow.insertCell(5)
+                    let street = trow.insertCell(6)
+                    let zipcode = trow.insertCell(7)
+
+                    id.textContent = data.id
+                    firstname.textContent = data.name.firstname
+                    lastname.textContent = data.name.lastname
+                    username.textContent = data.username
+                    email.textContent = data.email
+                    city.textContent = data.address.city
+                    street.textContent = data.address.street
+                    zipcode.textContent = data.address.zipcode
+                });
+            })
+
+    </script>
+
+    </body>
+
+</html>
