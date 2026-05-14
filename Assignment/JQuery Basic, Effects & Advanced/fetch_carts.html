@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cart </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            
+        </div>
+    </div>
+
+    <script>
+
+        fetch("https://dummyjson.com/carts", {
+            method:"GET"
+        })
+        .then((res) => {
+            return res.json()
+        })
+        .then((res) => {
+            console.log(res)
+            for(let index in res.carts){
+                let data = res.carts[index]
+                console.log(data)
+                let HTML_card = 
+                    `
+                        <div class="col-md-4 mt-2 mb-2">
+                            <div class="card h-100">
+                                <img src="${data.products[0].thumbnail}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${data.products[0].title}</h5>
+                                    <p class="card-text"><strong>Quantity : </strong>${data.products[0].quantity}</p>
+                                    <p class="card-text"><strong>Price : </strong>${data.products[0].total} $</p>
+                                    <p class="card-text"><strong>Discount : </strong>${data.products[0].discountPercentage} $</p>
+                                    <p class="card-text"><strong>Discounted Price : </strong>$${data.products[0].discountedTotal} $</p>
+                                    <a href="#" class="btn btn-primary"> Buy Now </a>
+                                </div>
+                            </div>
+                        </div>
+                    `
+                document.querySelector(".row").innerHTML += HTML_card
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

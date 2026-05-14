@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // fetch("data1.json",{
+        //     method:"GET"
+        // })
+        // .then((res)=>{
+        //     return res.json()
+        // })
+        // .then((res)=>{
+        //     console.log(res)
+        //     res.forEach((data, index) => {
+        //        console.log(data.id) 
+        //        document.write(`<p> ID : ${data.id} </p>`)
+        //        document.write(`<p> Name : ${data.name} </p>`)
+        //        document.write(`<p> Course : ${data.course} </p>`)
+        //        document.write(`<p> Age : ${data.age}</p>`)
+        //     });
+        // })
+
+        fetch("data2.json",{
+            method:"GET"
+        })
+        .then((res)=>{
+            return res.json()
+        })
+        .then((res)=>{
+            console.log(res)
+            document.write(`<h1> Users Information </h1>`)
+            res.users.forEach((data) => {
+               //console.log(data.id) 
+               document.write(`<p> 
+                                    ID : ${data.id} <br> 
+                                    Name : ${data.name} <br> 
+                                    Course : ${data.course} <br>
+                                    Age : ${data.age} <br><br>
+                                </p>`)
+            //    document.write(`<p> ID : ${data.id} </p>`)
+            //    document.write(`<p> Name : ${data.name} </p>`)
+            //    document.write(`<p> Course : ${data.course} </p>`)
+            //    document.write(`<p> Age : ${data.age}</p>`)
+            });
+             document.write(`<h1> Admin Information </h1>`)
+            res.admin.forEach((data) => {
+               //console.log(data.id) 
+               document.write(`<p> 
+                                    ID : ${data.id} <br>
+                                    Name : ${data.name} <br>
+                                    Course : ${data.email} <br><br>
+                                </p>`)
+            //    document.write(`<p> ID : ${data.id} </p>`)
+            //    document.write(`<p> Name : ${data.name} </p>`)
+            //    document.write(`<p> Course : ${data.email} </p>`)
+            });
+        })
+
+    </script>
+
+</body>
+</html>

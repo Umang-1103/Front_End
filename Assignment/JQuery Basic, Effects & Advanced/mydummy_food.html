@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <table class="table">
+        <thead>
+            <th>Id</th>
+            <th>Dish</th>
+            <th>Drink</th>
+            <th>Restaurant</th>
+            <th>Price</th>
+        </thead>
+        <tbody>
+        
+        </tbody>
+    </table>
+
+    <script>
+
+        fetch("https://api.mydummyapi.com/categories/food", {
+            method: "GET"
+        })
+            .then((res) => {
+                return res.json()
+            })
+            .then((data) => {
+                // console.log(data)
+                for (index of data) {
+                    console.log(index)
+                    
+                let HTML_Food = `
+                        <tbody>
+                            <tr>
+                                <td>${index.id}</td>
+                                <td>${index.dish}</td>
+                                <td>${index.drink}</td>
+                                <td>${index.restaurant}</td>
+                                <td>${index.price}</td>
+
+                                
+                            </tr>
+                        </tbody>
+                    `
+                    document.querySelector("tbody").innerHTML += HTML_Food
+                }
+            })
+
+    </script>
+
+</body>
+
+</html>
