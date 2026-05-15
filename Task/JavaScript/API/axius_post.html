@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.13.2/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <script>
+
+        // let userdata = async () => {
+        //     let res = await axios.post("https://6a057869aa826ca75c09e308.mockapi.io/users",
+        //         {
+        //             name:"Lucifer Morningstar",
+        //             city:"LA",
+        //             image:"https://github.com/Umang-1103/Front_End/blob/main/Assignment/Module%203/Lab/Images/team1.png",
+        //             email:"mslucifer007@gmail.com"
+        //         }
+        //     )
+        // }
+        // userdata()
+
+        let products = [
+            {
+                    title: "Soft Cotton Computer",
+                    description: "Ergonomic Sausages designed with Ceramic for gleaming performance",
+                    price: "359.45",
+                    brand: "Bamboo"
+            },
+            {
+                title: "Elegant Bronze Shoes",
+                description: "Our fresh-inspired Hat brings a taste of luxury to your glaring lifestyle",
+                price: "240.85",
+                brand: "Metal"
+            }
+        ]
+        let productdata = async () => {
+            
+            for(let product of products){
+                let res = await axios.post("https://6a057869aa826ca75c09e308.mockapi.io/products",product)
+                console.log(res.data)
+            }
+
+        }
+        productdata()
+
+    </script>
+    
+</body>
+</html>
+
+<!-- {
+    "title": "Soft Cotton Computer",
+    "description": "Ergonomic Sausages designed with Ceramic for gleaming performance",
+    "price": "359.45",
+    "brand": "Bamboo",
+    "id": "5"
+  },
+  {
+    "title": "Elegant Bronze Shoes",
+    "description": "Our fresh-inspired Hat brings a taste of luxury to your glaring lifestyle",
+    "price": "240.85",
+    "brand": "Metal",
+    "id": "6"
+  } -->

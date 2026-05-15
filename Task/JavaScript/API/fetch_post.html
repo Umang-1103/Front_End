@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        fetch("https://6a057869aa826ca75c09e308.mockapi.io/users",{
+            method:"POST",
+            headers : {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                email:"klausmk@gmail.com",
+                name:"Klaus Salvatore",
+                city:"Mystic Fall"
+            })
+        })
+        .then((res) => {
+            return res.json()
+        })
+        .then((data) => {
+            console.log(data)
+        })
+
+    </script>
+    
+</body>
+</html>

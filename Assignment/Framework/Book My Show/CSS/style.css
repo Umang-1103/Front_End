@@ -1,0 +1,79 @@
+
+
+#city .col p{
+    font-size: 10.5px;
+}
+#bar-offcanvas .gift-box{
+    padding: 8px 5px 0 5px;
+}
+#bar-offcanvas .gift-box button{
+    width: 55%;
+    height: 40px;
+}
+#right-angle{
+    margin-left: 138px;
+}
+.offcanvas-body .list-group .your_order p{
+    margin-bottom: 0;
+}
+.offcanvas-body .list-group .your_order small{
+    margin-top: 0;
+}
+#lock{
+    margin-left: 76px;
+}
+#book_change{
+    margin-left: 140px;
+}
+
+.rec_movie .content i{
+    font-size: 13px;
+}
+
+.live_event .content i{
+    font-size: 13px;
+}
+
+.premiere .heading-content i{
+    font-size: 68px;
+}
+.premiere .content i{
+    font-size: 13px;
+}
+
+.latest_play .content i{
+    font-size: 13px;
+}
+
+.footer .f-content i{
+    font-size: 50px;
+}
+.footer .footer-service{
+    background-color: #3f3f3f;
+}
+.footer .footer-service .services i{
+    margin: 30px 0 0 50px;
+    font-size: 80px;
+}
+.footer .footer-service .services p{
+    font-size: 14px;
+}
+.footer .footer-service .service-1{
+    margin: 0 0 0 50px;
+}
+.footer .footer-service .service-2{
+    margin: 0 0 0 220px;
+}
+.footer .footer-service .service-3{
+    margin: 0 0 0 250px;
+}
+.footer-content .movie_name a{
+    font-size: 13px;
+}
+
+
+
+
+
+
+
