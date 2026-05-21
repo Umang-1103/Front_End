@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="color">Hello World</p>
+    <button id="btn-text">Text</button>
+    <button id="btn-color">Color</button>
+
+    <script>
+        
+        let btn1 = document.getElementById("btn-text")
+        btn1.addEventListener("click",function(){
+            document.querySelector("p").innerHTML = "JavaScript is Fun!"
+        })
+
+        let btn2 = document.getElementById("btn-color")
+        btn2.addEventListener("click",function(){
+            document.getElementsByClassName("color")[0].style.background = "blue"
+        })
+
+    </script>
+    
+</body>
+</html>
