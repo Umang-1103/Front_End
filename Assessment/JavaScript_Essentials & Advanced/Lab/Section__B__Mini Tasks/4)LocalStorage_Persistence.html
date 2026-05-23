@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage Persistence</title>
+    <style>
+         form{
+            background-color: antiquewhite;
+            padding: 20px;
+            width: 40%;
+            border: 2px solid;
+        }
+        input{
+            display: block;
+            margin: 10px;
+            padding: 4px;
+            border: 2px solid black;
+        }
+        button{
+            margin: 10px;
+            padding: 5px;
+            background-color: lightgray;
+        }
+        div{
+            width: 5%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Add Link</h1>
+
+    <form onsubmit="savedLinks(event)">
+        <input type="text" id="title" placeholder="Enter a Title" required>
+        <input type="url" id="url" placeholder="Enter an URL" required>
+        <button type="submit">Add Link</button>
+    </form>
+    <h1>Links Preview </h1>
+    <div id="output">
+
+    </div>
+
+    <script>
+
+        let title = document.getElementById("title")
+        let url = document.getElementById("url")
+        let output = document.getElementById("output")
+
+
+        function savedLinks(event){
+            event.preventDefault(); 
+
+            let saved_title = title.value
+            let saved_url = url.value
+            let link = {
+                title: saved_title,
+                url: saved_url
+            }
+            let links = JSON.parse(localStorage.getItem("links")) || [];
+            links.push(link);
+            localStorage.setItem("links", JSON.stringify(links));
+            showlink()
+        }
+
+        function showlink(){
+            let links = JSON.parse(localStorage.getItem("links")) || [];
+            output.innerHTML = ""
+
+            links.forEach(link => {
+                let btn = document.createElement("button")
+                btn.style.margin = "2px"
+                btn.innerHTML = link.title
+                btn.addEventListener("click",function(){
+                window.open(link.url, "_blank")
+                })
+            
+                output.appendChild(btn)
+            })
+            title.value = "";
+            url.value = "";
+            
+        }
+
+        window.onload = showlink;
+
+        localStorage.clear()
+
+    </script>
+    
+</body>
+</html>

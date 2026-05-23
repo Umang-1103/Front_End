@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Validation</title>
+    <style>
+        form{
+            background-color: antiquewhite;
+            padding: 20px;
+            width: 40%;
+            border: 2px solid;
+        }
+        label{
+            font-weight: bold;
+        }
+        input{
+            display: block;
+            padding: 4px;
+            border: 2px solid black;
+        }
+        button{
+            margin: 10px;
+            padding: 5px;
+            background-color: lightgray;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <form action="" onsubmit="return validation()">
+
+        <div>
+            <label for="">Title : </label>
+            <input type="text" id="title" placeholder="Enter a Title">
+            <span id="title-error"></span>
+        </div>
+        <br>
+        <div>
+            <label for="">URL : </label>
+            <input type="url" id="url" placeholder="Enter an URL">
+            <span id="url-error"></span>
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+
+
+    <script>
+
+        function validation() {
+
+            let title = document.getElementById("title").value;
+            let title_error = document.getElementById("title-error");
+
+            let url = document.getElementById("url").value;
+            let url_error = document.getElementById("url-error");
+
+            if (title == "" || title == null) {
+                title_error.innerHTML = "**Please Enter a Title"
+                title_error.style.color = "red"
+                return false
+            }
+            else {
+                title_error.innerHTML = ""
+            }
+
+            if (url == "" || url == null) {
+                url_error.innerHTML = "**Please Enter an URL"
+                url_error.style.color = "red"
+                return false
+            }
+            else {
+                url_error.innerHTML = ""
+            }
+            
+        }
+
+    </script>
+
+</body>
+
+</html>

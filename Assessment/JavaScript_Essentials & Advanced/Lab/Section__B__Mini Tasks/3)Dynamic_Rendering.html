@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Rendering</title>
+</head>
+<body>
+
+    <div class="buttons">
+
+    </div>
+
+    <script>
+
+        let link = [
+            {
+                title:"GitHub",
+                url:"https://github.com"
+            },
+            {
+                title:"LinkedIn",
+                url:"https://linkedin.com"
+            }
+        ]
+
+        let button = document.querySelector(".buttons")
+        
+        for(let i=0;i<link.length;i++){
+            let btn = document.createElement("button")
+            btn.innerHTML = link[i].title
+            btn.style.margin = "5px"
+            btn.addEventListener("click",function(){
+                window.open(link[i].url, "_blank")
+            })
+            // button.appendChild(btn)
+            button.append(btn)
+        }
+        
+        // let btn1 = document.getElementById("btn1")
+        // btn1.innerHTML = link[0].title
+        // btn1.addEventListener("click",function(){
+        //     window.open(link[0].url, "_blank")
+        // })
+
+        // let btn2 = document.getElementById("btn2")
+        // btn2.innerHTML = link[1].title
+        // btn2.addEventListener("click",function(){
+        //     window.open(link[1].url, "_blank")
+        // })
+
+    </script>
+    
+</body>
+</html>

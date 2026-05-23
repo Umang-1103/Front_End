@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio-Stack Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="top-bar">
+            <h2>Bio-Stack</h2>
+            <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+        </div>
+
+        <form onsubmit="savedLinks(event)">
+            <input type="text" id="title" placeholder="Enter a Title" required>
+            <span id="title-error"></span>
+
+            <input type="url" id="url" placeholder="Enter a URL" required>
+            <span id="url-error"></span>
+
+            <button type="submit" class="submit-btn" onclick="return validation()">
+                Add Link
+            </button>
+        </form>
+
+        <div id="output"></div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Object & Input</title>
+    <style>
+        form{
+            background-color: antiquewhite;
+            padding: 20px;
+            width: 40%;
+            border: 2px solid;
+        }
+        input{
+            display: block;
+            margin: 10px;
+            padding: 4px;
+            border: 2px solid black;
+        }
+        button{
+            margin: 10px;
+            padding: 5px;
+            background-color: lightgray;
+        }
+        div{
+            margin: 20px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <form onsubmit="show(event)">
+        <input type="text" id="title" placeholder="Enter a Title" required>
+        <input type="url" id="url" placeholder="Enter an URL" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="output">
+
+    </div>
+
+    <script>
+
+        let title = document.getElementById("title")
+        let url = document.getElementById("url")
+        let output = document.getElementById("output")
+
+        function show(event){
+            event.preventDefault(); 
+
+            output.innerHTML += `
+                <p> 
+                    Title :- ${title.value} <br>
+                    URL :- ${url.value} 
+                </p>
+            `;
+           
+            title.value = "";
+            url.value = "";
+        }
+
+    </script>
+    
+</body>
+</html>
