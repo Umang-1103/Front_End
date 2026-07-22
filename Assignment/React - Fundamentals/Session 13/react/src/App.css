@@ -1,0 +1,23 @@
+.light {
+  background: white;
+  color: black;
+  height: 100vh;
+  padding: 30px;
+  transition: 0.4s;
+}
+
+.dark {
+  background: #1e1e1e;
+  color: white;
+  height: 100vh;
+  padding: 30px;
+  transition: 0.4s;
+}
+
+
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
