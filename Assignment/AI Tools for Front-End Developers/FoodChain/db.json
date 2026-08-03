@@ -1,0 +1,1777 @@
+{
+  "foods": [
+    {
+      "id": "1",
+      "name": "Classic Cheese Burger",
+      "category": "Burger",
+      "price": 12.9,
+      "rating": 4.8,
+      "description": "Juicy flame-grilled beef patty, melted cheddar cheese, fresh lettuce, tomatoes, pickles, and our signature burger sauce on a toasted brioche bun.",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Beef Patty",
+        "Cheddar Cheese",
+        "Lettuce",
+        "Tomato",
+        "Pickles",
+        "Brioche Bun"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "2",
+      "name": "Bacon Double Cheeseburger",
+      "category": "Burger",
+      "price": 15.49,
+      "rating": 4.9,
+      "description": "Double beef patties, double cheddar cheese, crispy applewood smoked bacon, lettuce, tomato, and BBQ sauce.",
+      "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Double Beef Patty",
+        "Double Cheddar",
+        "Crispy Bacon",
+        "Lettuce",
+        "Tomato",
+        "BBQ Sauce"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "3",
+      "name": "Spicy Jalapeno Burger",
+      "category": "Burger",
+      "price": 13.99,
+      "rating": 4.6,
+      "description": "Grilled beef patty topped with pepper jack cheese, spicy fresh jalapeno slices, chipotle mayo, lettuce, and onions.",
+      "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Beef Patty",
+        "Pepper Jack",
+        "Jalapenos",
+        "Chipotle Mayo",
+        "Lettuce",
+        "Red Onions"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "4",
+      "name": "Truffle Mushroom Swiss Burger",
+      "category": "Burger",
+      "price": 16.99,
+      "rating": 4.7,
+      "description": "Gourmet beef patty topped with sautéed wild mushrooms, melted Swiss cheese, and luxurious truffle aioli.",
+      "image": "https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Beef Patty",
+        "Wild Mushrooms",
+        "Swiss Cheese",
+        "Truffle Aioli"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "5",
+      "name": "Crispy Avocado Veggie Burger",
+      "category": "Burger",
+      "price": 11.99,
+      "rating": 4.5,
+      "description": "Handmade crispy black bean & quinoa patty, sliced fresh avocado, lettuce, sprouts, and herb garlic sauce.",
+      "image": "https://images.unsplash.com/photo-1521305916504-4a1121188589?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Quinoa Patty",
+        "Fresh Avocado",
+        "Lettuce",
+        "Alfalfa Sprouts",
+        "Garlic Sauce"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "6",
+      "name": "Classic Margherita Pizza",
+      "category": "Pizza",
+      "price": 14.99,
+      "rating": 4.7,
+      "description": "Thin crust sourdough pizza, fresh marinara sauce, premium mozzarella, fresh sweet basil leaves, and cold-pressed extra virgin olive oil.",
+      "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Sourdough Crust",
+        "Marinara",
+        "Mozzarella",
+        "Fresh Basil",
+        "Olive Oil"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "7",
+      "name": "Double Pepperoni Pizza",
+      "category": "Pizza",
+      "price": 17.99,
+      "rating": 4.9,
+      "description": "Hand-tossed pizza base loaded with two layers of spicy beef pepperoni, mozzarella cheese, and hot honey drizzle.",
+      "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Hand-tossed Crust",
+        "Double Pepperoni",
+        "Mozzarella",
+        "Hot Honey"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "8",
+      "name": "BBQ Chicken Feast Pizza",
+      "category": "Pizza",
+      "price": 16.99,
+      "rating": 4.6,
+      "description": "Tender grilled chicken strips, tangy BBQ sauce, red onions, cilantro, and smoked gouda cheese blend.",
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Pizza Dough",
+        "BBQ Chicken",
+        "Red Onions",
+        "Cilantro",
+        "Smoked Gouda"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "9",
+      "name": "Four Cheese White Pizza",
+      "category": "Pizza",
+      "price": 15.99,
+      "rating": 4.8,
+      "description": "Garlic olive oil base (no red sauce), mozzarella, ricotta, gorgonzola, and freshly grated parmesan cheese.",
+      "image": "https://images.unsplash.com/photo-1573821663912-569905455b1c?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Ricotta",
+        "Mozzarella",
+        "Gorgonzola",
+        "Parmesan",
+        "Garlic Oil"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "10",
+      "name": "Garden Veggie Pizza",
+      "category": "Pizza",
+      "price": 13.99,
+      "rating": 4.5,
+      "description": "Topped with bell peppers, red onions, black olives, sliced mushrooms, cherry tomatoes, and sweet corn.",
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Bell Peppers",
+        "Mushrooms",
+        "Black Olives",
+        "Sweet Corn",
+        "Tomatoes"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "11",
+      "name": "California Sushi Roll",
+      "category": "Sushi",
+      "price": 15.99,
+      "rating": 4.6,
+      "description": "Nori-wrapped premium sushi rolls filled with crab salad, fresh cucumber, and avocado, rolled in toasted sesame seeds.",
+      "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Sushi Rice",
+        "Seaweed Nori",
+        "Crab Salad",
+        "Cucumber",
+        "Avocado",
+        "Sesame Seeds"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "12",
+      "name": "Dragon Roll Combo",
+      "category": "Sushi",
+      "price": 19.99,
+      "rating": 4.9,
+      "description": "Eel and cucumber inside, covered with thin slices of avocado, unagi sweet eel sauce, and spicy orange tobiko.",
+      "image": "https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Sushi Rice",
+        "Eel (Unagi)",
+        "Avocado",
+        "Cucumber",
+        "Eel Sauce",
+        "Tobiko"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "13",
+      "name": "Spicy Tuna Roll",
+      "category": "Sushi",
+      "price": 16.99,
+      "rating": 4.7,
+      "description": "Fresh yellowfin tuna, spicy sriracha mayo, cucumber, and green onion rolled in sushi rice and sesame seeds.",
+      "image": "https://images.unsplash.com/photo-1583623025817-d180a2221d0a?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Yellowfin Tuna",
+        "Spicy Mayo",
+        "Cucumber",
+        "Green Onion"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "14",
+      "name": "Premium Salmon Nigiri",
+      "category": "Sushi",
+      "price": 18.99,
+      "rating": 4.8,
+      "description": "Six pieces of fresh sashimi-grade Norwegian salmon placed over seasoned vinegar sushi rice pads.",
+      "image": "https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Norwegian Salmon",
+        "Sushi Rice",
+        "Wasabi",
+        "Soy Sauce"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "15",
+      "name": "Vegetarian Maki Platter",
+      "category": "Sushi",
+      "price": 14.49,
+      "rating": 4.4,
+      "description": "12-piece mixed platter of cucumber maki, avocado maki, and yellow pickled radish maki rolls.",
+      "image": "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Sushi Rice",
+        "Cucumber Maki",
+        "Avocado Maki",
+        "Radish Maki"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "16",
+      "name": "Classic Spaghetti Carbonara",
+      "category": "Pasta",
+      "price": 14.99,
+      "rating": 4.8,
+      "description": "Al dente spaghetti tossed in a rich emulsion of raw egg yolks, grated Pecorino Romano cheese, crispy guanciale, and cracked black pepper.",
+      "image": "https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Spaghetti",
+        "Egg Yolks",
+        "Pecorino Romano",
+        "Guanciale",
+        "Black Pepper"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "17",
+      "name": "Creamy Fettuccine Alfredo",
+      "category": "Pasta",
+      "price": 15.99,
+      "rating": 4.6,
+      "description": "Fettuccine pasta tossed in a rich, buttery sauce made with double cream and aged Parmesan cheese, topped with grilled chicken.",
+      "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Fettuccine",
+        "Alfredo Sauce",
+        "Double Cream",
+        "Parmesan",
+        "Grilled Chicken"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "18",
+      "name": "Tuscan Garlic Shrimp Pasta",
+      "category": "Pasta",
+      "price": 18.99,
+      "rating": 4.7,
+      "description": "Penne pasta, pan-seared garlic shrimp, sun-dried tomatoes, and fresh baby spinach in a creamy garlic white wine sauce.",
+      "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Penne",
+        "Garlic Shrimp",
+        "Sun-dried Tomatoes",
+        "Baby Spinach",
+        "White Wine Sauce"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "19",
+      "name": "Baked Lasagna Classico",
+      "category": "Pasta",
+      "price": 16.49,
+      "rating": 4.9,
+      "description": "Layers of fresh pasta sheets, slow-simmered bolognese meat sauce, creamy bechamel, ricotta, and melted mozzarella crust.",
+      "image": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Pasta Sheets",
+        "Bolognese Sauce",
+        "Ricotta",
+        "Bechamel",
+        "Mozzarella"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "20",
+      "name": "Spicy Arrabbiata Pasta",
+      "category": "Pasta",
+      "price": 12.99,
+      "rating": 4.4,
+      "description": "Penne pasta tossed in a spicy, fiery tomato sauce infused with garlic, red chili peppers, and extra virgin olive oil.",
+      "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Penne",
+        "Spicy Tomato Sauce",
+        "Garlic",
+        "Red Chili",
+        "Olive Oil"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "21",
+      "name": "Classic Caesar Salad",
+      "category": "Salad",
+      "price": 10.99,
+      "rating": 4.5,
+      "description": "Crisp romaine lettuce tossed in creamy garlic Caesar dressing, topped with parmesan shavings and sourdough croutons.",
+      "image": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Romaine Lettuce",
+        "Caesar Dressing",
+        "Parmesan Cheese",
+        "Sourdough Croutons"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "22",
+      "name": "Mediterranean Greek Salad",
+      "category": "Salad",
+      "price": 11.99,
+      "rating": 4.6,
+      "description": "Crisp cucumbers, vine-ripened tomatoes, red onions, kalamata olives, and block feta cheese, tossed in oregano vinaigrette.",
+      "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Tomatoes",
+        "Cucumber",
+        "Kalamata Olives",
+        "Feta Cheese",
+        "Red Onion",
+        "Vinaigrette"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "23",
+      "name": "Quinoa Avocado Power Bowl",
+      "category": "Salad",
+      "price": 13.99,
+      "rating": 4.8,
+      "description": "Organic white quinoa, half sliced avocado, baby kale, roasted sweet potatoes, chickpeas, and lemon tahini dressing.",
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Quinoa",
+        "Avocado",
+        "Kale",
+        "Sweet Potatoes",
+        "Chickpeas",
+        "Tahini Dressing"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "24",
+      "name": "Thai Grilled Chicken Salad",
+      "category": "Salad",
+      "price": 12.99,
+      "rating": 4.7,
+      "description": "Sliced grilled chicken breast, shredded cabbage, carrots, cilantro, edamame, and peanut ginger dressing.",
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Grilled Chicken",
+        "Cabbage",
+        "Carrots",
+        "Edamame",
+        "Peanut Ginger Dressing"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "25",
+      "name": "Burrata Caprese Salad",
+      "category": "Salad",
+      "price": 14.99,
+      "rating": 4.9,
+      "description": "Creamy Italian burrata cheese ball surrounded by heirloom tomatoes, fresh basil pesto, and balsamic glaze reduction.",
+      "image": "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Burrata Cheese",
+        "Heirloom Tomatoes",
+        "Basil Pesto",
+        "Balsamic Glaze"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "26",
+      "name": "Warm Chocolate Lava Cake",
+      "category": "Dessert",
+      "price": 7.99,
+      "rating": 4.9,
+      "description": "Decadent warm chocolate cake with a gooey, molten lava center, served with a scoop of premium vanilla bean ice cream.",
+      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Chocolate Lava Cake",
+        "Vanilla Ice Cream",
+        "Powdered Sugar",
+        "Raspberry Sauce"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "27",
+      "name": "New York Style Cheesecake",
+      "category": "Dessert",
+      "price": 8.49,
+      "rating": 4.8,
+      "description": "Rich and creamy baked cheesecake on a graham cracker crust, topped with fresh sweet strawberry compote.",
+      "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Cheesecake",
+        "Graham Crust",
+        "Strawberry Compote",
+        "Whipped Cream"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "28",
+      "name": "Tiramisu Classico",
+      "category": "Dessert",
+      "price": 8.99,
+      "rating": 4.7,
+      "description": "Layers of espresso-soaked ladyfingers, velvety mascarpone cheese cream, and dusted unsweetened cocoa powder.",
+      "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Ladyfingers",
+        "Espresso Coffee",
+        "Mascarpone",
+        "Cocoa Powder"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "29",
+      "name": "Warm Apple Crisp",
+      "category": "Dessert",
+      "price": 7.49,
+      "rating": 4.6,
+      "description": "Spiced honey-baked apples under a golden, crunchy oat-cinnamon crumble top, served hot with vanilla sauce.",
+      "image": "https://images.unsplash.com/photo-1507226983735-a838615193b0?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Spiced Apples",
+        "Oat Crumble",
+        "Cinnamon",
+        "Vanilla Sauce"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "30",
+      "name": "French Crème Brûlée",
+      "category": "Dessert",
+      "price": 9.49,
+      "rating": 4.8,
+      "description": "Rich vanilla custard base topped with a contrasting layer of hard caramelized sugar, cracked to order.",
+      "image": "https://images.unsplash.com/photo-1470324161839-ce2bb6fa6bc3?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Vanilla Custard",
+        "Caramelized Sugar",
+        "Fresh Berries"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "31",
+      "name": "Refreshing Mint Mojito",
+      "category": "Drinks",
+      "price": 6.99,
+      "rating": 4.4,
+      "description": "Ice-cold sparkling drink made with freshly muddled mint leaves, lime juice, sugarcane syrup, and soda.",
+      "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Fresh Mint",
+        "Lime Juice",
+        "Simple Syrup",
+        "Soda Water",
+        "Ice"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "32",
+      "name": "Strawberry Milkshake",
+      "category": "Drinks",
+      "price": 5.99,
+      "rating": 4.7,
+      "description": "Thick milkshake blended with fresh organic strawberries, whole milk, and real strawberry gelato, topped with whipped cream.",
+      "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Fresh Strawberries",
+        "Milk",
+        "Strawberry Gelato",
+        "Whipped Cream"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "33",
+      "name": "Iced Caramel Macchiato",
+      "category": "Drinks",
+      "price": 5.49,
+      "rating": 4.6,
+      "description": "Chilled espresso with cold milk and sweet vanilla syrup, finished with a heavy drizzle of rich caramel sauce.",
+      "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Espresso",
+        "Cold Milk",
+        "Vanilla Syrup",
+        "Caramel Drizzle"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "34",
+      "name": "Tropical Mango Smoothie",
+      "category": "Drinks",
+      "price": 6.49,
+      "rating": 4.5,
+      "description": "Blended creamy beverage containing sweet Alphonso mango pulp, greek yogurt, honey, and a splash of coconut milk.",
+      "image": "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Alphonso Mango",
+        "Greek Yogurt",
+        "Honey",
+        "Coconut Milk"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "35",
+      "name": "Fresh Orange Juice",
+      "category": "Drinks",
+      "price": 4.99,
+      "rating": 4.8,
+      "description": "100% freshly squeezed juice from Florida Valencia oranges, pulp-free, served over crushed ice.",
+      "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Squeezed Oranges",
+        "Ice"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "36",
+      "name": "Flame-Grilled Chicken Breast",
+      "category": "Chicken",
+      "price": 16.99,
+      "rating": 4.5,
+      "description": "Tender and juicy chicken breast marinated in herbs, flame-grilled and served with steamed garlic vegetables.",
+      "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Chicken Breast",
+        "Herb Marinade",
+        "Garlic Vegetables"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "37",
+      "name": "Southern Crispy Fried Chicken",
+      "category": "Chicken",
+      "price": 15.99,
+      "rating": 4.8,
+      "description": "Three pieces of bone-in chicken marinated in buttermilk, double-dredged in seasoned flour and fried crispy golden brown.",
+      "image": "https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Chicken Pieces",
+        "Buttermilk",
+        "Seasoned Flour",
+        "Spices"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "38",
+      "name": "Butter Chicken Classico",
+      "category": "Chicken",
+      "price": 17.49,
+      "rating": 4.9,
+      "description": "Tandoori grilled chicken chunks folded into a luxurious, spiced, buttery tomato cream gravy, served with naan.",
+      "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Tandoori Chicken",
+        "Butter Cream Gravy",
+        "Indian Spices",
+        "Butter Naan"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "39",
+      "name": "Teriyaki Chicken Glaze Bowl",
+      "category": "Chicken",
+      "price": 14.99,
+      "rating": 4.6,
+      "description": "Grilled chicken thigh cubes tossed in sweet teriyaki glaze, served over steamed jasmine rice and broccoli.",
+      "image": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Chicken Thigh",
+        "Teriyaki Glaze",
+        "Jasmine Rice",
+        "Broccoli",
+        "Sesame Seeds"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "40",
+      "name": "Spicy Buffalo Chicken Wings",
+      "category": "Chicken",
+      "price": 13.99,
+      "rating": 4.7,
+      "description": "10-piece chicken wings tossed in fiery Buffalo hot sauce, served with celery sticks and blue cheese dipping sauce.",
+      "image": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Chicken Wings",
+        "Buffalo Hot Sauce",
+        "Celery Sticks",
+        "Blue Cheese Dip"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "41",
+      "name": "Crispy French Fries",
+      "category": "Sides",
+      "price": 4.99,
+      "rating": 4.6,
+      "description": "Golden-brown, skin-on russet potato fries lightly seasoned with sea salt, served hot with ketchup.",
+      "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Russet Potatoes",
+        "Sea Salt",
+        "Vegetable Oil"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "42",
+      "name": "Gourmet Onion Rings",
+      "category": "Sides",
+      "price": 5.99,
+      "rating": 4.5,
+      "description": "Thick-cut jumbo sweet onions coated in crispy craft beer batter, served with spicy ranch dip.",
+      "image": "https://images.unsplash.com/photo-1639024471283-2bc7b3c6a267?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Sweet Onions",
+        "Beer Batter",
+        "Spicy Ranch Dip"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "43",
+      "name": "Loaded Bacon Cheese Fries",
+      "category": "Sides",
+      "price": 8.99,
+      "rating": 4.8,
+      "description": "French fries smothered in melted cheddar cheese sauce, topped with crispy bacon bits and chopped green onions.",
+      "image": "https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "French Fries",
+        "Cheddar Cheese Sauce",
+        "Bacon Bits",
+        "Green Onions"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "44",
+      "name": "Garlic Parmesan Breadsticks",
+      "category": "Sides",
+      "price": 6.49,
+      "rating": 4.6,
+      "description": "Freshly baked warm breadsticks brushed with melted garlic butter and sprinkled with aged Parmesan and parsley.",
+      "image": "https://images.unsplash.com/photo-1544982503-9f984c14501a?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Dough Breadsticks",
+        "Garlic Butter",
+        "Parmesan Cheese",
+        "Parsley"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "45",
+      "name": "Sweet Potato Fries",
+      "category": "Sides",
+      "price": 5.49,
+      "rating": 4.7,
+      "description": "Crispy sweet potato fries with a light dusting of sea salt and cinnamon, served with chipotle aioli dip.",
+      "image": "https://images.unsplash.com/photo-1580795478931-e125ab90cc5a?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Sweet Potatoes",
+        "Sea Salt",
+        "Chipotle Aioli"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "46",
+      "name": "Gourmet Steak Street Tacos",
+      "category": "Mexican",
+      "price": 11.49,
+      "rating": 4.8,
+      "description": "Three soft corn tortillas stuffed with seasoned grilled skirt steak, fresh onions, cilantro, and red salsa verde.",
+      "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Corn Tortillas",
+        "Skirt Steak",
+        "Chopped Onions",
+        "Cilantro",
+        "Salsa Verde"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "47",
+      "name": "Loaded Beef Nachos Supreme",
+      "category": "Mexican",
+      "price": 12.99,
+      "rating": 4.7,
+      "description": "Crispy corn tortilla chips topped with seasoned ground beef, black beans, hot cheese sauce, guacamole, and sour cream.",
+      "image": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Tortilla Chips",
+        "Seasoned Ground Beef",
+        "Cheese Sauce",
+        "Guacamole",
+        "Sour Cream"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "48",
+      "name": "Grilled Chicken Quesadilla",
+      "category": "Mexican",
+      "price": 10.99,
+      "rating": 4.6,
+      "description": "Large flour tortilla folded with grilled chicken breast, melted Monterey Jack cheese, peppers, onions, served with salsa.",
+      "image": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Flour Tortilla",
+        "Grilled Chicken",
+        "Monterey Jack",
+        "Onions & Peppers"
+      ],
+      "isPopular": false
+    },
+    {
+      "id": "49",
+      "name": "Elote Mexican Street Corn",
+      "category": "Mexican",
+      "price": 6.99,
+      "rating": 4.8,
+      "description": "Two grilled ears of corn slathered in cojita cheese, sweet mayonnaise-sour cream mix, chili powder, and fresh lime juice.",
+      "image": "https://images.unsplash.com/photo-1551782450-17144efb9c50?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Fresh Sweet Corn",
+        "Cotija Cheese",
+        "Mayonnaise Vibe",
+        "Chili Powder",
+        "Lime"
+      ],
+      "isPopular": true
+    },
+    {
+      "id": "50",
+      "name": "Chunky Guacamole & Chips",
+      "category": "Mexican",
+      "price": 7.99,
+      "rating": 4.9,
+      "description": "Made-to-order guacamole with chunky Haas avocados, lime juice, tomatoes, jalapeños, onions, served with tortilla chips.",
+      "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80",
+      "ingredients": [
+        "Haas Avocados",
+        "Tomatoes",
+        "Jalapeno",
+        "Onions",
+        "Cilantro",
+        "Tortilla Chips"
+      ],
+      "isPopular": true
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin User",
+      "email": "admin@foodchain.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "3",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "4",
+      "name": "Michael Brown",
+      "email": "michael@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "5",
+      "name": "Emily Davis",
+      "email": "emily@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "6",
+      "name": "William Garcia",
+      "email": "william@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "7",
+      "name": "Olivia Martinez",
+      "email": "olivia@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "8",
+      "name": "James Rodriguez",
+      "email": "james@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "9",
+      "name": "Sophia Wilson",
+      "email": "sophia@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "10",
+      "name": "Benjamin Thomas",
+      "email": "benjamin@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "11",
+      "name": "Isabella Anderson",
+      "email": "isabella@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "12",
+      "name": "Lucas Taylor",
+      "email": "lucas@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "13",
+      "name": "Mia Thomas",
+      "email": "mia@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "14",
+      "name": "Alexander Moore",
+      "email": "alexander@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "15",
+      "name": "Charlotte Jackson",
+      "email": "charlotte@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "16",
+      "name": "Elijah White",
+      "email": "elijah@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "17",
+      "name": "Amelia Harris",
+      "email": "amelia@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "18",
+      "name": "Daniel Martin",
+      "email": "daniel@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "19",
+      "name": "Harper Clark",
+      "email": "harper@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "20",
+      "name": "Henry Lewis",
+      "email": "henry@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "id": "21",
+      "name": "Evelyn Lee",
+      "email": "evelyn@example.com",
+      "password": "password123",
+      "role": "customer"
+    },
+    {
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "password": "123456",
+      "role": "customer",
+      "id": "ua4UZk4ldLw"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": "2",
+      "userName": "John Doe",
+      "userEmail": "john@example.com",
+      "items": [
+        {
+          "id": "1",
+          "name": "Classic Cheese Burger",
+          "price": 12.99,
+          "quantity": 2
+        },
+        {
+          "id": "41",
+          "name": "Crispy French Fries",
+          "price": 4.99,
+          "quantity": 1
+        }
+      ],
+      "subTotal": 30.97,
+      "deliveryFee": 0,
+      "tax": 3.1,
+      "totalAmount": 34.07,
+      "address": "101 Broadway Ave, Apt 3B, New York, NY",
+      "phone": "+1 555-901-2034",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-28T18:30:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "2",
+      "userId": "3",
+      "userName": "Jane Smith",
+      "userEmail": "jane@example.com",
+      "items": [
+        {
+          "id": "6",
+          "name": "Classic Margherita Pizza",
+          "price": 14.99,
+          "quantity": 1
+        }
+      ],
+      "subTotal": 14.99,
+      "deliveryFee": 5,
+      "tax": 1.5,
+      "totalAmount": 21.49,
+      "address": "25 Maple Lane, Chicago, IL",
+      "phone": "+1 555-888-1243",
+      "paymentMethod": "Cash on Delivery",
+      "date": "2026-07-29T12:15:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "3",
+      "userId": "4",
+      "userName": "Michael Brown",
+      "userEmail": "michael@example.com",
+      "items": [
+        {
+          "id": "16",
+          "name": "Classic Spaghetti Carbonara",
+          "price": 14.99,
+          "quantity": 1
+        },
+        {
+          "id": "27",
+          "name": "New York Style Cheesecake",
+          "price": 8.49,
+          "quantity": 1
+        }
+      ],
+      "subTotal": 23.48,
+      "deliveryFee": 5,
+      "tax": 2.35,
+      "totalAmount": 30.83,
+      "address": "909 Pine Street, San Francisco, CA",
+      "phone": "+1 555-707-1234",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-29T19:00:00.000Z",
+      "status": "Out for Delivery"
+    },
+    {
+      "id": "4",
+      "userId": "5",
+      "userName": "Emily Davis",
+      "userEmail": "emily@example.com",
+      "items": [
+        {
+          "id": "12",
+          "name": "Dragon Roll Combo",
+          "price": 19.99,
+          "quantity": 2
+        }
+      ],
+      "subTotal": 39.98,
+      "deliveryFee": 0,
+      "tax": 4,
+      "totalAmount": 43.98,
+      "address": "400 Oak Court, Seattle, WA",
+      "phone": "+1 555-404-5678",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-30T10:00:00.000Z",
+      "status": "Preparing"
+    },
+    {
+      "id": "5",
+      "userId": "6",
+      "userName": "William Garcia",
+      "userEmail": "william@example.com",
+      "items": [
+        {
+          "id": "37",
+          "name": "Southern Crispy Fried Chicken",
+          "price": 15.99,
+          "quantity": 1
+        },
+        {
+          "id": "32",
+          "name": "Strawberry Milkshake",
+          "price": 5.99,
+          "quantity": 2
+        }
+      ],
+      "subTotal": 27.97,
+      "deliveryFee": 5,
+      "tax": 2.8,
+      "totalAmount": 35.77,
+      "address": "12 Elm St, Dallas, TX",
+      "phone": "+1 555-214-9988",
+      "paymentMethod": "Cash on Delivery",
+      "date": "2026-07-30T11:05:00.000Z",
+      "status": "Preparing"
+    },
+    {
+      "id": "6",
+      "userId": "7",
+      "userName": "Olivia Martinez",
+      "userEmail": "olivia@example.com",
+      "items": [
+        {
+          "id": "2",
+          "name": "Bacon Double Cheeseburger",
+          "price": 15.49,
+          "quantity": 1
+        },
+        {
+          "id": "43",
+          "name": "Loaded Bacon Cheese Fries",
+          "price": 8.99,
+          "quantity": 1
+        }
+      ],
+      "subTotal": 24.48,
+      "deliveryFee": 5,
+      "tax": 2.45,
+      "totalAmount": 31.93,
+      "address": "88 Cedar Rd, Miami, FL",
+      "phone": "+1 555-305-1122",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-28T20:10:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "7",
+      "userId": "8",
+      "userName": "James Rodriguez",
+      "userEmail": "james@example.com",
+      "items": [
+        {
+          "id": "46",
+          "name": "Gourmet Steak Street Tacos",
+          "price": 11.49,
+          "quantity": 3
+        },
+        {
+          "id": "50",
+          "name": "Chunky Guacamole & Chips",
+          "price": 7.99,
+          "quantity": 1
+        }
+      ],
+      "subTotal": 42.46,
+      "deliveryFee": 0,
+      "tax": 4.25,
+      "totalAmount": 46.71,
+      "address": "777 Hillside Drive, Los Angeles, CA",
+      "phone": "+1 555-310-8800",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-29T14:40:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "8",
+      "userId": "9",
+      "userName": "Sophia Wilson",
+      "userEmail": "sophia@example.com",
+      "items": [
+        {
+          "id": "23",
+          "name": "Quinoa Avocado Power Bowl",
+          "price": 13.99,
+          "quantity": 1
+        },
+        {
+          "id": "31",
+          "name": "Refreshing Mint Mojito",
+          "price": 6.99,
+          "quantity": 1
+        }
+      ],
+      "subTotal": 20.98,
+      "deliveryFee": 5,
+      "tax": 2.1,
+      "totalAmount": 28.08,
+      "address": "55 Hickory Ave, Boston, MA",
+      "phone": "+1 555-617-3344",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-29T13:20:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "9",
+      "userId": "10",
+      "userName": "Benjamin Thomas",
+      "userEmail": "benjamin@example.com",
+      "items": [
+        {
+          "id": "38",
+          "name": "Butter Chicken Classico",
+          "price": 17.49,
+          "quantity": 2
+        }
+      ],
+      "subTotal": 34.98,
+      "deliveryFee": 0,
+      "tax": 3.5,
+      "totalAmount": 38.48,
+      "address": "456 Washington Way, Philadelphia, PA",
+      "phone": "+1 555-215-6677",
+      "paymentMethod": "Cash on Delivery",
+      "date": "2026-07-30T09:30:00.000Z",
+      "status": "Preparing"
+    },
+    {
+      "id": "10",
+      "userId": "11",
+      "userName": "Isabella Anderson",
+      "userEmail": "isabella@example.com",
+      "items": [
+        {
+          "id": "7",
+          "name": "Double Pepperoni Pizza",
+          "price": 17.99,
+          "quantity": 1
+        },
+        {
+          "id": "8",
+          "name": "BBQ Chicken Feast Pizza",
+          "price": 16.99,
+          "quantity": 1
+        }
+      ],
+      "subTotal": 34.98,
+      "deliveryFee": 0,
+      "tax": 3.5,
+      "totalAmount": 38.48,
+      "address": "33 Valley Vista, Denver, CO",
+      "phone": "+1 555-303-9911",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-28T19:15:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "11",
+      "userId": "12",
+      "userName": "Lucas Taylor",
+      "userEmail": "lucas@example.com",
+      "items": [
+        {
+          "id": "13",
+          "name": "Spicy Tuna Roll",
+          "price": 16.99,
+          "quantity": 2
+        },
+        {
+          "id": "14",
+          "name": "Premium Salmon Nigiri",
+          "price": 18.99,
+          "quantity": 1
+        }
+      ],
+      "subTotal": 52.97,
+      "deliveryFee": 0,
+      "tax": 5.3,
+      "totalAmount": 58.27,
+      "address": "124 Coastline Blvd, San Diego, CA",
+      "phone": "+1 555-619-2233",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-29T20:45:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "12",
+      "userId": "13",
+      "userName": "Mia Thomas",
+      "userEmail": "mia@example.com",
+      "items": [
+        {
+          "id": "26",
+          "name": "Warm Chocolate Lava Cake",
+          "price": 7.99,
+          "quantity": 3
+        }
+      ],
+      "subTotal": 23.97,
+      "deliveryFee": 5,
+      "tax": 2.4,
+      "totalAmount": 31.37,
+      "address": "888 Forest St, Atlanta, GA",
+      "phone": "+1 555-404-7788",
+      "paymentMethod": "Cash on Delivery",
+      "date": "2026-07-28T21:30:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "13",
+      "userId": "14",
+      "userName": "Alexander Moore",
+      "userEmail": "alexander@example.com",
+      "items": [
+        {
+          "id": "18",
+          "name": "Tuscan Garlic Shrimp Pasta",
+          "price": 18.99,
+          "quantity": 1
+        },
+        {
+          "id": "35",
+          "name": "Fresh Orange Juice",
+          "price": 4.99,
+          "quantity": 2
+        }
+      ],
+      "subTotal": 28.97,
+      "deliveryFee": 5,
+      "tax": 2.9,
+      "totalAmount": 36.87,
+      "address": "74 River Road, Portland, OR",
+      "phone": "+1 555-503-4411",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-29T18:00:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "14",
+      "userId": "15",
+      "userName": "Charlotte Jackson",
+      "userEmail": "charlotte@example.com",
+      "items": [
+        {
+          "id": "3",
+          "name": "Spicy Jalapeno Burger",
+          "price": 13.99,
+          "quantity": 2
+        },
+        {
+          "id": "45",
+          "name": "Sweet Potato Fries",
+          "price": 5.49,
+          "quantity": 2
+        }
+      ],
+      "subTotal": 38.96,
+      "deliveryFee": 0,
+      "tax": 3.9,
+      "totalAmount": 42.86,
+      "address": "234 Mountain view, Salt Lake, UT",
+      "phone": "+1 555-801-6655",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-30T10:45:00.000Z",
+      "status": "Preparing"
+    },
+    {
+      "id": "15",
+      "userId": "16",
+      "userName": "Elijah White",
+      "userEmail": "elijah@example.com",
+      "items": [
+        {
+          "id": "10",
+          "name": "Garden Veggie Pizza",
+          "price": 13.99,
+          "quantity": 1
+        },
+        {
+          "id": "22",
+          "name": "Mediterranean Greek Salad",
+          "price": 11.99,
+          "quantity": 1
+        }
+      ],
+      "subTotal": 25.98,
+      "deliveryFee": 5,
+      "tax": 2.6,
+      "totalAmount": 33.58,
+      "address": "15 Ocean Parkway, Brooklyn, NY",
+      "phone": "+1 555-718-4433",
+      "paymentMethod": "Cash on Delivery",
+      "date": "2026-07-29T17:15:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "16",
+      "userId": "17",
+      "userName": "Amelia Harris",
+      "userEmail": "amelia@example.com",
+      "items": [
+        {
+          "id": "36",
+          "name": "Flame-Grilled Chicken Breast",
+          "price": 16.99,
+          "quantity": 1
+        },
+        {
+          "id": "34",
+          "name": "Tropical Mango Smoothie",
+          "price": 6.49,
+          "quantity": 1
+        }
+      ],
+      "subTotal": 23.48,
+      "deliveryFee": 5,
+      "tax": 2.35,
+      "totalAmount": 30.83,
+      "address": "812 Willow Way, Phoenix, AZ",
+      "phone": "+1 555-602-5544",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-30T08:15:00.000Z",
+      "status": "Preparing"
+    },
+    {
+      "id": "17",
+      "userId": "18",
+      "userName": "Daniel Martin",
+      "userEmail": "daniel@example.com",
+      "items": [
+        {
+          "id": "47",
+          "name": "Loaded Beef Nachos Supreme",
+          "price": 12.99,
+          "quantity": 2
+        },
+        {
+          "id": "49",
+          "name": "Elote Mexican Street Corn",
+          "price": 6.99,
+          "quantity": 2
+        }
+      ],
+      "subTotal": 39.96,
+      "deliveryFee": 0,
+      "tax": 4,
+      "totalAmount": 43.96,
+      "address": "202 Fiesta Lane, San Antonio, TX",
+      "phone": "+1 555-210-4499",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-28T13:45:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "18",
+      "userId": "19",
+      "userName": "Harper Clark",
+      "userEmail": "harper@example.com",
+      "items": [
+        {
+          "id": "25",
+          "name": "Burrata Caprese Salad",
+          "price": 14.99,
+          "quantity": 1
+        },
+        {
+          "id": "9",
+          "name": "Four Cheese White Pizza",
+          "price": 15.99,
+          "quantity": 1
+        }
+      ],
+      "subTotal": 30.98,
+      "deliveryFee": 0,
+      "tax": 3.1,
+      "totalAmount": 34.08,
+      "address": "111 Birch Drive, Minneapolis, MN",
+      "phone": "+1 555-612-8877",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-29T11:45:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "19",
+      "userId": "20",
+      "userName": "Henry Lewis",
+      "userEmail": "henry@example.com",
+      "items": [
+        {
+          "id": "39",
+          "name": "Teriyaki Chicken Glaze Bowl",
+          "price": 14.99,
+          "quantity": 2
+        }
+      ],
+      "subTotal": 29.98,
+      "deliveryFee": 5,
+      "tax": 3,
+      "totalAmount": 37.98,
+      "address": "77 Maple Wood, Houston, TX",
+      "phone": "+1 555-713-2211",
+      "paymentMethod": "Cash on Delivery",
+      "date": "2026-07-30T11:15:00.000Z",
+      "status": "Preparing"
+    },
+    {
+      "id": "20",
+      "userId": "21",
+      "userName": "Evelyn Lee",
+      "userEmail": "evelyn@example.com",
+      "items": [
+        {
+          "id": "30",
+          "name": "French Crème Brûlée",
+          "price": 9.49,
+          "quantity": 2
+        },
+        {
+          "id": "33",
+          "name": "Iced Caramel Macchiato",
+          "price": 5.49,
+          "quantity": 2
+        }
+      ],
+      "subTotal": 29.96,
+      "deliveryFee": 5,
+      "tax": 3,
+      "totalAmount": 37.96,
+      "address": "56 Harbor Point, San Francisco, CA",
+      "phone": "+1 555-415-8844",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-28T16:20:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "21",
+      "userId": "2",
+      "userName": "John Doe",
+      "userEmail": "john@example.com",
+      "items": [
+        {
+          "id": "4",
+          "name": "Truffle Mushroom Swiss Burger",
+          "price": 16.99,
+          "quantity": 1
+        }
+      ],
+      "subTotal": 16.99,
+      "deliveryFee": 5,
+      "tax": 1.7,
+      "totalAmount": 23.69,
+      "address": "101 Broadway Ave, Apt 3B, New York, NY",
+      "phone": "+1 555-901-2034",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-29T17:40:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "22",
+      "userId": "3",
+      "userName": "Jane Smith",
+      "userEmail": "jane@example.com",
+      "items": [
+        {
+          "id": "28",
+          "name": "Tiramisu Classico",
+          "price": 8.99,
+          "quantity": 2
+        }
+      ],
+      "subTotal": 17.98,
+      "deliveryFee": 5,
+      "tax": 1.8,
+      "totalAmount": 24.78,
+      "address": "25 Maple Lane, Chicago, IL",
+      "phone": "+1 555-888-1243",
+      "paymentMethod": "Cash on Delivery",
+      "date": "2026-07-29T21:10:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "23",
+      "userId": "4",
+      "userName": "Michael Brown",
+      "userEmail": "michael@example.com",
+      "items": [
+        {
+          "id": "5",
+          "name": "Crispy Avocado Veggie Burger",
+          "price": 11.99,
+          "quantity": 1
+        },
+        {
+          "id": "42",
+          "name": "Gourmet Onion Rings",
+          "price": 5.99,
+          "quantity": 1
+        }
+      ],
+      "subTotal": 17.98,
+      "deliveryFee": 5,
+      "tax": 1.8,
+      "totalAmount": 24.78,
+      "address": "909 Pine Street, San Francisco, CA",
+      "phone": "+1 555-707-1234",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-30T10:30:00.000Z",
+      "status": "Preparing"
+    },
+    {
+      "id": "24",
+      "userId": "5",
+      "userName": "Emily Davis",
+      "userEmail": "emily@example.com",
+      "items": [
+        {
+          "id": "48",
+          "name": "Grilled Chicken Quesadilla",
+          "price": 10.99,
+          "quantity": 2
+        }
+      ],
+      "subTotal": 21.98,
+      "deliveryFee": 5,
+      "tax": 2.2,
+      "totalAmount": 29.18,
+      "address": "400 Oak Court, Seattle, WA",
+      "phone": "+1 555-404-5678",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-07-29T15:20:00.000Z",
+      "status": "Delivered"
+    },
+    {
+      "id": "25",
+      "userId": "6",
+      "userName": "William Garcia",
+      "userEmail": "william@example.com",
+      "items": [
+        {
+          "id": "40",
+          "name": "Spicy Buffalo Chicken Wings",
+          "price": 13.99,
+          "quantity": 2
+        }
+      ],
+      "subTotal": 27.98,
+      "deliveryFee": 5,
+      "tax": 2.8,
+      "totalAmount": 35.78,
+      "address": "12 Elm St, Dallas, TX",
+      "phone": "+1 555-214-9988",
+      "paymentMethod": "Cash on Delivery",
+      "date": "2026-07-30T10:15:00.000Z",
+      "status": "Preparing"
+    },
+    {
+      "userId": "ua4UZk4ldLw",
+      "userName": "abc",
+      "userEmail": "abc@gmail.com",
+      "items": [
+        {
+          "id": "1",
+          "name": "Classic Cheese Burger",
+          "price": 12.9,
+          "quantity": 2
+        }
+      ],
+      "subTotal": 25.8,
+      "deliveryFee": 5,
+      "tax": 2.58,
+      "totalAmount": 33.38,
+      "address": "Apartment 4B, 456 Gourmand Lane, Food District, Gourmet City, GC 98765",
+      "phone": "+1 (555) 987-6543",
+      "paymentMethod": "Cash on Delivery",
+      "date": "2026-07-30T06:20:04.712Z",
+      "status": "Preparing",
+      "id": "bkDMSg0l5a8"
+    },
+    {
+      "userId": "ua4UZk4ldLw",
+      "userName": "abc",
+      "userEmail": "abc@gmail.com",
+      "items": [
+        {
+          "id": "32",
+          "name": "Strawberry Milkshake",
+          "price": 5.99,
+          "quantity": 1
+        }
+      ],
+      "subTotal": 5.99,
+      "deliveryFee": 5,
+      "tax": 0.5990000000000001,
+      "totalAmount": 11.589,
+      "address": "Apartment 4B, 456 Gourmand Lane, Food District, Gourmet City, GC 98765",
+      "phone": "+1 (555) 987-6543",
+      "paymentMethod": "Cash on Delivery",
+      "date": "2026-07-30T07:59:12.470Z",
+      "status": "Preparing",
+      "id": "zHmrrKLlh5Q"
+    },
+    {
+      "userId": "ua4UZk4ldLw",
+      "userName": "abc",
+      "userEmail": "abc@gmail.com",
+      "items": [
+        {
+          "id": "1",
+          "name": "Classic Cheese Burger",
+          "price": 12.9,
+          "quantity": 1
+        }
+      ],
+      "subTotal": 12.9,
+      "deliveryFee": 5,
+      "tax": 1.29,
+      "totalAmount": 19.189999999999998,
+      "address": "Apartment 4B, 456 Gourmand Lane, Food District, Gourmet City, GC 98765",
+      "phone": "+1 (555) 987-6543",
+      "paymentMethod": "Cash on Delivery",
+      "date": "2026-08-03T05:22:22.384Z",
+      "status": "Preparing",
+      "id": "KLr2ngY0UP8"
+    },
+    {
+      "userId": "ua4UZk4ldLw",
+      "userName": "abc",
+      "userEmail": "abc@gmail.com",
+      "items": [
+        {
+          "id": "13",
+          "name": "Spicy Tuna Roll",
+          "price": 16.99,
+          "quantity": 3
+        }
+      ],
+      "subTotal": 50.97,
+      "deliveryFee": 0,
+      "tax": 5.097,
+      "totalAmount": 56.067,
+      "address": "Apartment 4B, 456 Gourmand Lane, Food District, Gourmet City, GC 98765",
+      "phone": "+1 (555) 987-6543",
+      "paymentMethod": "Credit/Debit Card",
+      "date": "2026-08-03T05:24:52.498Z",
+      "status": "Preparing",
+      "id": "EqqH7wxiXcg"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "foodId": "1",
+      "userName": "Marcus Aurelius",
+      "comment": "The Classic Cheese Burger was pure bliss! Juicy and perfect toasted bun.",
+      "rating": 5,
+      "date": "2026-07-28T18:45:00Z"
+    },
+    {
+      "id": "2",
+      "foodId": "6",
+      "userName": "Sophia Loren",
+      "comment": "Traditional Italian Margherita at its absolute best. Sublime cheese stretch.",
+      "rating": 5,
+      "date": "2026-07-29T12:30:00Z"
+    },
+    {
+      "id": "3",
+      "foodId": "26",
+      "userName": "David Beckham",
+      "comment": "Warm Chocolate Lava Cake had an amazing liquid center. A real treat!",
+      "rating": 5,
+      "date": "2026-07-28T21:45:00Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

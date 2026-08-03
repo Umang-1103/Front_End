@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-font: 'Outfit', sans-serif;
+  --dark-bg: #121212;
+  --dark-card: #1e1e1e;
+  --gold-accent: #ffc107;
+  
+  /* Swiggy/Zomato Inspired */
+  --zomato-orange: #FF6B00;
+  --zomato-gray: #f8f9fa;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--dark-bg) !important;
+  color: #f3f4f6 !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Remove default Vite root constraints */
+#root {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  text-align: left !important;
+  border-inline: none !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d2d2d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--zomato-orange);
+}
+
+/* Custom transitions and helper styles */
+.transition-all {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.focus-none:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Form controls customization */
+.form-control, .form-select, .form-range {
+  border-radius: 8px;
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--zomato-orange) !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 107, 0, 0.2) !important;
+}
+
+/* Custom buttons */
+.hover-warning:hover {
+  color: var(--zomato-orange) !important;
+}
+
+/* Typography styles */
+.fw-extrabold {
+  font-weight: 800;
+}
+
+/* Align and layout fixes */
+.object-fit-cover {
+  object-fit: cover;
+}
+
+/* Base custom classes */
+.hover-card-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-card-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(255, 107, 0, 0.15) !important;
+}
+
+/* Card custom badges styling */
+.badge {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Custom input styling for search */
+.input-group-text {
+  color: #6c757d;
+}
+
+/* Swiggy/Zomato Custom UI Additions */
+.text-orange {
+  color: var(--zomato-orange) !important;
+}
+
+.bg-orange {
+  background-color: var(--zomato-orange) !important;
+}
+
+.bg-orange-subtle {
+  background-color: rgba(255, 107, 0, 0.12) !important;
+}
+
+.border-orange {
+  border-color: var(--zomato-orange) !important;
+}
+
+/* Slide Up Animation */
+.slide-up {
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Skeleton Loading Animation */
+.skeleton-box {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(-90deg, #f0f0f0 0%, #e0e0e0 50%, #f0f0f0 100%);
+  background-size: 400% 400%;
+  animation: pulse-skeleton 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse-skeleton {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.border-dashed {
+  border-style: dashed !important;
+}
+
+/* ==========================================================================
+   Light / Dark Mode Stylesheet Overrides
+   ========================================================================== */
+
+/* Light Theme Variables */
+[data-theme="light"] {
+  --dark-bg: #ffffff;
+  --dark-card: #f8f9fa;
+  --bg-body: #ffffff;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --border-color: #dee2e6;
+  --bg-footer: #f8f9fa;
+}
+
+/* Light Theme Specific Overrides */
+[data-theme="light"] body {
+  background-color: #ffffff !important;
+  color: #212529 !important;
+}
+
+[data-theme="light"] .bg-dark,
+[data-theme="light"] .theme-bg-dark {
+  background-color: #ffffff !important;
+  color: #212529 !important;
+}
+
+[data-theme="light"] .bg-black,
+[data-theme="light"] .theme-bg-black {
+  background-color: #f8f9fa !important;
+  color: #212529 !important;
+}
+
+[data-theme="light"] .text-white,
+[data-theme="light"] .text-light,
+[data-theme="light"] .nav-link:not(.active) {
+  color: #212529 !important;
+}
+
+[data-theme="light"] .text-muted {
+  color: #6c757d !important;
+}
+
+[data-theme="light"] .card {
+  background-color: #ffffff !important;
+  color: #212529 !important;
+  border: 1px solid #dee2e6 !important;
+}
+
+[data-theme="light"] .list-group-item {
+  background-color: #ffffff !important;
+  color: #212529 !important;
+  border-color: #dee2e6 !important;
+}
+
+[data-theme="light"] .border-secondary {
+  border-color: #dee2e6 !important;
+}
+
+[data-theme="light"] .navbar-dark {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+[data-theme="light"] .navbar-brand {
+  color: #212529 !important;
+}
+
+[data-theme="light"] .nav-link {
+  color: #212529 !important;
+}
+
+[data-theme="light"] .nav-link.active {
+  color: #FF6B00 !important;
+}
+
+[data-theme="light"] .modal-content {
+  background-color: #ffffff !important;
+  color: #212529 !important;
+  border: 1px solid #dee2e6 !important;
+}
+
+[data-theme="light"] .modal-header,
+[data-theme="light"] .modal-footer {
+  background-color: #f8f9fa !important;
+  border-color: #dee2e6 !important;
+}
+
+[data-theme="light"] .btn-close-white {
+  filter: none !important;
+}
+
+[data-theme="light"] input,
+[data-theme="light"] select,
+[data-theme="light"] textarea {
+  background-color: #ffffff !important;
+  color: #212529 !important;
+  border: 1px solid #ced4da !important;
+}
+
+[data-theme="light"] input::placeholder,
+[data-theme="light"] textarea::placeholder {
+  color: #adb5bd !important;
+}
+
+[data-theme="light"] footer {
+  background-color: #f8f9fa !important;
+  color: #212529 !important;
+  border-top: 1px solid #dee2e6 !important;
+}
+
+[data-theme="light"] footer .text-muted,
+[data-theme="light"] footer .text-white {
+  color: #212529 !important;
+}
+
+[data-theme="light"] .carousel-item .px-4.py-5 {
+  background-color: #f8f9fa !important;
+  border-color: #dee2e6 !important;
+}
+
+/* Dark Theme Specific Overrides (to override default bootstrap styles where needed) */
+[data-theme="dark"] .bg-light {
+  background-color: #121212 !important;
+  color: #f3f4f6 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #1e1e1e !important;
+  color: #f3f4f6 !important;
+}
+
+[data-theme="dark"] .text-dark {
+  color: #f3f4f6 !important;
+}
+
+[data-theme="dark"] .table-light {
+  background-color: #2d2d2d !important;
+  color: #f3f4f6 !important;
+}
+
+[data-theme="dark"] .table {
+  color: #f3f4f6 !important;
+}
+
+[data-theme="dark"] .table-hover tbody tr:hover {
+  background-color: #2d2d2d !important;
+  color: #f3f4f6 !important;
+}
+
+[data-theme="dark"] .card {
+  background-color: #1e1e1e !important;
+  color: #f3f4f6 !important;
+  border: 1px solid #2d2d2d !important;
+}
+
+[data-theme="dark"] .list-group-item {
+  background-color: #1e1e1e !important;
+  color: #f3f4f6 !important;
+  border-color: #2d2d2d !important;
+}
+
+[data-theme="dark"] .modal-content {
+  background-color: #1e1e1e !important;
+  color: #f3f4f6 !important;
+  border: 1px solid #2d2d2d !important;
+}
+
+[data-theme="dark"] .modal-header,
+[data-theme="dark"] .modal-footer {
+  background-color: #121212 !important;
+  border-color: #2d2d2d !important;
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+  background-color: #2d2d2d !important;
+  color: #f3f4f6 !important;
+  border: 1px solid #374151 !important;
+}
+
+[data-theme="dark"] .form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23f3f4f6' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+}
+
+/* Custom theme overrides for admin sidebar and navbar controls */
+[data-theme="light"] .hover-bg-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  color: #FF6B00 !important;
+}
+
+[data-theme="dark"] .btn-light {
+  background-color: #2d2d2d !important;
+  color: #f3f4f6 !important;
+  border: 1px solid #374151 !important;
+}
+
+[data-theme="dark"] .border-secondary-subtle {
+  border-color: #374151 !important;
+}
+
+[data-theme="dark"] .border-light {
+  border-color: #2d2d2d !important;
+}
+
+[data-theme="dark"] .text-muted {
+  color: #9ca3af !important;
+}
+
+[data-theme="dark"] .admin-wrapper-lg .bg-light {
+  background-color: #121212 !important;
+}
+
+[data-theme="dark"] .admin-wrapper-lg .bg-white {
+  background-color: #1e1e1e !important;
+}
+
+/* Force elements to maintain white color regardless of theme override */
+.text-white-force {
+  color: #ffffff !important;
+}
+
+/* Ensure active admin link in sidebar has white text and orange background */
+.sidebar-active-link {
+  background-color: #FF6B00 !important;
+  color: #ffffff !important;
+}
+
+/* Skeleton loader dark mode override */
+[data-theme="dark"] .skeleton-box {
+  background: linear-gradient(-90deg, #2d2d2d 0%, #3d3d3d 50%, #2d2d2d 100%) !important;
+}
+
+/* Bootstrap subtle color dark mode overrides */
+[data-theme="dark"] .bg-danger-subtle {
+  background-color: rgba(220, 53, 69, 0.15) !important;
+}
+[data-theme="dark"] .bg-warning-subtle {
+  background-color: rgba(255, 193, 7, 0.15) !important;
+}
+[data-theme="dark"] .bg-success-subtle {
+  background-color: rgba(25, 135, 84, 0.15) !important;
+}
+[data-theme="dark"] .bg-info-subtle {
+  background-color: rgba(13, 202, 240, 0.15) !important;
+}
+
+[data-theme="dark"] .text-danger-emphasis { color: #ea868f !important; }
+[data-theme="dark"] .text-warning-emphasis { color: #ffda6a !important; }
+[data-theme="dark"] .text-success-emphasis { color: #75b798 !important; }
+[data-theme="dark"] .text-info-emphasis { color: #6edff6 !important; }
+
+[data-theme="dark"] .border {
+  border-color: #2d2d2d !important;
+}
+
+/* ==========================================================================
+   Premium Navbar & Responsive UI Micro-Animations
+   ========================================================================== */
+
+/* Navbar Navigation Links - Hover Underline Slide */
+.navbar .nav-link {
+  position: relative;
+  transition: color 0.25s ease-in-out;
+}
+
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 8px;
+  right: 8px;
+  height: 2px;
+  background-color: var(--zomato-orange);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Active and Hover Accent Colors */
+[data-theme="light"] .navbar-light .navbar-nav .nav-link.active {
+  color: var(--zomato-orange) !important;
+}
+
+[data-theme="light"] .navbar-light .navbar-nav .nav-link:hover {
+  color: var(--zomato-orange) !important;
+}
+
+[data-theme="dark"] .navbar-dark .navbar-nav .nav-link.active {
+  color: var(--gold-accent) !important;
+}
+
+[data-theme="dark"] .navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--gold-accent) !important;
+}
+
+/* Animated Hamburger Toggler */
+.navbar-toggler.animate-toggler {
+  padding: 8px 6px;
+  position: relative;
+  display: none; /* Hidden on desktop screens */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+}
+
+.navbar-toggler.animate-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.hamburger-box {
+  width: 22px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hamburger-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: 4px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform-origin: 2px center;
+}
+
+/* Transform lines into an 'X' close icon when menu is expanded */
+.navbar-toggler[aria-expanded="true"] .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(1px, -1px);
+}
+
+.navbar-toggler[aria-expanded="true"] .hamburger-line:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.navbar-toggler[aria-expanded="true"] .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(1px, 1px);
+}
+
+/* Collapsed menu slide down and glassmorphism styling on Mobile */
+@media (max-width: 991.98px) {
+  .navbar-toggler.animate-toggler {
+    display: flex; /* Visible on mobile & tablet viewports */
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 15px;
+    right: 15px;
+    border-radius: 16px;
+    margin-top: 12px;
+    padding: 24px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2) !important;
+    z-index: 1000;
+    transform: translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .navbar-collapse.show {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  [data-theme="dark"] .navbar-collapse {
+    background: rgba(30, 30, 30, 0.95) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  [data-theme="light"] .navbar-collapse {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  }
+  
+  /* Staggered slide-in entrance for links in collapsed menu */
+  .navbar-collapse.show .nav-item {
+    animation: slideInMenuItem 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+  }
+  
+  .navbar-collapse.show .nav-item:nth-child(1) { animation-delay: 0.05s; }
+  .navbar-collapse.show .nav-item:nth-child(2) { animation-delay: 0.1s; }
+  .navbar-collapse.show .nav-item:nth-child(3) { animation-delay: 0.15s; }
+  .navbar-collapse.show .nav-item:nth-child(4) { animation-delay: 0.2s; }
+  .navbar-collapse.show .d-flex { animation-delay: 0.25s; }
+}
+
+@keyframes slideInMenuItem {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Typography and Container Overrides */
+@media (max-width: 767.98px) {
+  h1, .display-3 {
+    font-size: 2.25rem !important;
+  }
+  h2, .display-4 {
+    font-size: 1.85rem !important;
+  }
+  h3 {
+    font-size: 1.50rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h1, .display-3 {
+    font-size: 1.95rem !important;
+  }
+  h2, .display-4 {
+    font-size: 1.60rem !important;
+  }
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+/* ==========================================================================
+   Utility Overrides for Inputs (e.g. Search Bars)
+   ========================================================================== */
+
+/* Force border-0 and bg-transparent when explicitly declared on form elements */
+input.border-0, select.border-0, textarea.border-0 {
+  border: none !important;
+  border-width: 0 !important;
+  box-shadow: none !important;
+}
+
+input.bg-transparent, select.bg-transparent, textarea.bg-transparent {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+
+
+
+
+
